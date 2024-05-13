@@ -147,213 +147,213 @@
       </section>
 
   <!-- projects section -->
-      <section class="container px-4 md:px-6 py-12 md:py-24">
-        <div class="grid gap-6 md:gap-8 lg:grid-cols-3">
-          <div class="space-y-4">
-            <div class="space-y-2">
-              <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">UX/UI Design</h2>
-              <p class="text-gray-100 dark:text-gray-400 md:text-xl">
-                Showcasing my expertise in user experience and interface design.
-              </p>
-            </div>
-            <div dir="ltr" data-orientation="horizontal">
-              <div
-                role="tablist"
-                aria-orientation="horizontal"
-                class="h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground grid grid-cols-3 gap-2"
-                tabindex="0"
-                data-orientation="horizontal"
-                style="outline: none;"
-              >
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                  aria-controls="radix-:r1e:-content-ux"
-                  data-state="active"
-                  id="radix-:r1e:-trigger-ux"
-                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
-                  tabindex="-1"
-                  data-orientation="horizontal"
-                  data-radix-collection-item=""
-                >
-                  UX
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="radix-:r1e:-content-ui"
-                  data-state="inactive"
-                  id="radix-:r1e:-trigger-ui"
-                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
-                  tabindex="-1"
-                  data-orientation="horizontal"
-                  data-radix-collection-item=""
-                >
-                  UI
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="radix-:r1e:-content-research"
-                  data-state="inactive"
-                  id="radix-:r1e:-trigger-research"
-                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
-                  tabindex="-1"
-                  data-orientation="horizontal"
-                  data-radix-collection-item=""
-                >
-                  Research
-                </button>
+      <section class="container px-4 md:px-6 py-10 text-gray-100 dark:text-gray-400">
+        <div class="grid gap-4 md:gap-8 lg:grid-cols-3">
+          
+          <Section>
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">UX/UI Design</h2>
+                <p class="md:text-xl">
+                  Showcasing my expertise in user experience and interface design.
+                </p>
               </div>
-              <div
-                data-state="active"
-                data-orientation="horizontal"
-                role="tabpanel"
-                aria-labelledby="radix-:r1e:-trigger-ux"
-                id="radix-:r1e:-content-ux"
-                tabindex="0"
-                class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                style=""
-              >
-                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
-                  <!-- project card 1 -->
-                  <Card />
-                  <!-- project card 2 -->
-                  <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                    <div class="flex flex-col space-y-1.5 p-6">
-                      <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                        Mobile App for Fitness Tracking
-                      </h3>
-                      <p class="text-sm text-muted-foreground">
-                        Designing a user-friendly mobile app for tracking fitness goals and progress.
-                      </p>
-                    </div>
-                    <div class="p-6">
-                      <div class="flex items-center justify-center h-full">
-                        <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="h-5 w-5"
-                          >
-                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                          </svg>
-                          View Live
-                        </button>
-                        <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="h-5 w-5"
-                          >
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                          </svg>
-                          View Code
-                        </button>
+              <div dir="ltr" data-orientation="horizontal">
+                <div
+                  role="tablist"
+                  aria-orientation="horizontal"
+                  class="h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground grid grid-cols-3 gap-2"
+                  tabindex="0"
+                  data-orientation="horizontal"
+                  style="outline: none;"
+                >
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="radix-:r1e:-content-ux"
+                    data-state="active"
+                    id="radix-:r1e:-trigger-ux"
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
+                    tabindex="-1"
+                    data-orientation="horizontal"
+                    data-radix-collection-item=""
+                  >
+                    UX
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="radix-:r1e:-content-ui"
+                    data-state="inactive"
+                    id="radix-:r1e:-trigger-ui"
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
+                    tabindex="-1"
+                    data-orientation="horizontal"
+                    data-radix-collection-item=""
+                  >
+                    UI
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="radix-:r1e:-content-research"
+                    data-state="inactive"
+                    id="radix-:r1e:-trigger-research"
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
+                    tabindex="-1"
+                    data-orientation="horizontal"
+                    data-radix-collection-item=""
+                  >
+                    Research
+                  </button>
+                </div>
+                <div
+                  data-state="active"
+                  data-orientation="horizontal"
+                  role="tabpanel"
+                  aria-labelledby="radix-:r1e:-trigger-ux"
+                  id="radix-:r1e:-content-ux"
+                  tabindex="0"
+                  class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  style=""
+                >
+                  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
+                    <!-- project card 1 -->
+                    <Card />
+                    <!-- project card 2 -->
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                      <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                          Mobile App for Fitness Tracking
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          Designing a user-friendly mobile app for tracking fitness goals and progress.
+                        </p>
+                      </div>
+                      <div class="p-6">
+                        <div class="flex items-center justify-center h-full">
+                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="h-5 w-5"
+                            >
+                              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            View Live
+                          </button>
+                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="h-5 w-5"
+                            >
+                              <polyline points="16 18 22 12 16 6"></polyline>
+                              <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            View Code
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- project card 3 -->
-                  <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                    <div class="flex flex-col space-y-1.5 p-6">
-                      <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                        E-commerce Website Redesign
-                      </h3>
-                      <p class="text-sm text-muted-foreground">
-                        Improving the user experience and interface of a leading e-commerce platform.
-                      </p>
-                    </div>
-                    <div class="p-6">
-                      <div class="flex items-center justify-center h-full">
-                        <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="h-5 w-5"
-                          >
-                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                          </svg>
-                          View Live
-                        </button>
-                        <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="h-5 w-5"
-                          >
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                          </svg>
-                          View Code
-                        </button>
+                    <!-- project card 3 -->
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                      <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                          E-commerce Website Redesign
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          Improving the user experience and interface of a leading e-commerce platform.
+                        </p>
+                      </div>
+                      <div class="p-6">
+                        <div class="flex items-center justify-center h-full">
+                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="h-5 w-5"
+                            >
+                              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            View Live
+                          </button>
+                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="h-5 w-5"
+                            >
+                              <polyline points="16 18 22 12 16 6"></polyline>
+                              <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            View Code
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div
+                  data-state="inactive"
+                  data-orientation="horizontal"
+                  role="tabpanel"
+                  aria-labelledby="radix-:r1e:-trigger-ui"
+                  hidden=""
+                  id="radix-:r1e:-content-ui"
+                  tabindex="0"
+                  class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                ></div>
+                <div
+                  data-state="inactive"
+                  data-orientation="horizontal"
+                  role="tabpanel"
+                  aria-labelledby="radix-:r1e:-trigger-research"
+                  hidden=""
+                  id="radix-:r1e:-content-research"
+                  tabindex="0"
+                  class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                ></div>
               </div>
-              <div
-                data-state="inactive"
-                data-orientation="horizontal"
-                role="tabpanel"
-                aria-labelledby="radix-:r1e:-trigger-ui"
-                hidden=""
-                id="radix-:r1e:-content-ui"
-                tabindex="0"
-                class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              ></div>
-              <div
-                data-state="inactive"
-                data-orientation="horizontal"
-                role="tabpanel"
-                aria-labelledby="radix-:r1e:-trigger-research"
-                hidden=""
-                id="radix-:r1e:-content-research"
-                tabindex="0"
-                class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              ></div>
             </div>
-          </div>
-          
-          
-          <Section>
-            <h1>Hello</h1>
-            <p>Will more fit?</p>
           </Section>
-          <div class="space-y-4">
+
+          <!-- the template has the projects broke into 3 sections rendered together -->
+          <!-- my upgrade is too change to a carousel, showing one section only -->
+          <!-- <div class="space-y-4">
             <div class="space-y-2">
               <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Web Development</h2>
               <p class="text-gray-500 dark:text-gray-400 md:text-xl">
@@ -509,8 +509,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
+
+  <!-- about section -->
+      <Section/>
     </main>
   </div>

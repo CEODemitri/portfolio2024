@@ -5,7 +5,7 @@
 
 <style>
     .container {
-        height: 650px;
+        height: 750px;
         width: 100svw;
     }
 </style>
