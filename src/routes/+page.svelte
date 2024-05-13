@@ -348,10 +348,11 @@
             </div>
           </div>
           
-          <!-- why is this no good? -->
-          <!-- <Section>
+          
+          <Section>
             <h1>Hello</h1>
-          </Section> -->
+            <p>Will more fit?</p>
+          </Section>
           <div class="space-y-4">
             <div class="space-y-2">
               <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Web Development</h2>
