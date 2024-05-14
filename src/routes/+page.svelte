@@ -162,7 +162,7 @@
                 <div
                   role="tablist"
                   aria-orientation="horizontal"
-                  class="h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground grid grid-cols-3 gap-2"
+                  class="h-9 items-center justify-center rounded-lg bg-[muted] p-1 text-muted-foreground grid grid-cols-3 gap-2"
                   tabindex="0"
                   data-orientation="horizontal"
                   style="outline: none;"
@@ -514,6 +514,6 @@
       </section>
 
   <!-- about section -->
-      <Section/>
+      <Section class="bg-[#2978A0]"></Section>
     </main>
   </div>
