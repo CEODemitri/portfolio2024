@@ -1,6 +1,23 @@
 <script>
 	import Card from "../lib/components/Card.svelte";
 	import Section from "../lib/components/Section.svelte";
+	import SectionHeader from "../lib/components/SectionHeader.svelte";
+
+  // section headers
+  const about = {
+    sectionTitle: "About Me",
+    subheading: "I design creative solutions with the ability to bring to life with Full Stack Development."
+  }
+
+  const services = {
+    sectionTitle: "Services",
+    subheading: "Full Stack Developer with a wide range of skills. I Specialize in designing and coding Web Applications."
+  }
+
+  const contact = {
+    sectionTitle: "Contact Me",
+    subheading: "Let's get in touch!"
+  }
 
 </script>
 <!--
@@ -65,7 +82,7 @@
                 View Work
               </a>
               <a
-                class="inline-flex h-10 items-center justify-center rounded-md border border-gray-50 bg-transparent px-8 text-sm font-medium text-gray-50 shadow-sm transition-colors hover:bg-gray-50/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
+                class="inline-flex h-10 items-center justify-center rounded-md border border-red-400 bg-transparent px-8 text-sm font-medium text-gray-50 shadow-sm transition-colors hover:bg-gray-50/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                 href="#"
               >
                 Contact Me
@@ -147,8 +164,8 @@
       </section>
 
   <!-- projects section -->
-      <section class="container px-4 md:px-6 py-10 text-gray-100 dark:text-gray-400">
-        <div class="grid gap-4 md:gap-8 lg:grid-cols-3">
+      <section class="container py-10 text-gray-100 dark:text-gray-400">
+        <div class="grid gap-4 md:gap-8 lg:grid-cols-3 p-2 m-5">
           
           <Section>
             <div class="space-y-4">
@@ -158,7 +175,9 @@
                   Showcasing my expertise in user experience and interface design.
                 </p>
               </div>
+              
               <div dir="ltr" data-orientation="horizontal">
+                <!-- project navigation -->
                 <div
                   role="tablist"
                   aria-orientation="horizontal"
@@ -220,12 +239,13 @@
                   class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   style=""
                 >
+                <!-- fix the width of the cards from overflowing on small screens -->
                   <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
                     <!-- project card 1 -->
                     <Card />
                     <!-- project card 2 -->
                     <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                      <div class="flex flex-col space-y-1.5 p-6">
+                      <div class="flex flex-col space-y-1.5 p-4">
                         <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
                           Mobile App for Fitness Tracking
                         </h3>
@@ -276,7 +296,7 @@
                     </div>
                     <!-- project card 3 -->
                     <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                      <div class="flex flex-col space-y-1.5 p-6">
+                      <div class="flex flex-col space-y-1.5 p-4">
                         <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
                           E-commerce Website Redesign
                         </h3>
@@ -514,6 +534,37 @@
       </section>
 
   <!-- about section -->
-      <Section class="bg-[#2978A0]"></Section>
+      <div class="bg-indigo-500 p-2 m-5 rounded-lg">
+        <Section>
+          <SectionHeader {...about}/>
+
+          <div class="grid h-4/6 w-4/5 bg-red-600 m-auto relative top-20">
+            <section></section>
+            <section></section>
+            <section></section>
+          </div>
+        </Section>
+      </div>
+
+  <!-- service section -->
+      <div class="section p-2 m-5 bg-[#1A2223] rounded-lg text-white">
+        <Section>
+          <SectionHeader {...services}/>
+        </Section>
+      </div>
+
+  <!-- contact section -->
+      <div class="section p-2 m-5 bg-[#2978A0] rounded-lg text-white">
+        <Section>
+          <SectionHeader {...contact}/>
+
+          <div class="h-4/6 w-4/5 bg-red-600 m-auto relative top-20">
+          </div>
+        </Section>
+      </div>
+
+  <!-- footer -->
+      <footer class="bg-[#1A2223] p-2 h-[175px] md:h-[300px]">
+      </footer>
     </main>
   </div>
