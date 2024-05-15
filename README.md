@@ -2,7 +2,7 @@
 
 - [ ] Animate .job
 - [x] edit Card component
-- [ ] change colors to palette
-- [ ] clean up projects section before moving too about
-- [ ] clean right scroll
+- [ ] change colors in css|tailwind to palette
+- [x] clean right scroll
 - [ ] fix section child spacing
+- [ ] homepage responsiveness sucks rn.  

@@ -443,8 +443,8 @@
         <Section>
           <SectionHeader {...about}/>
 
-          <div class="grid h-4/6 w-4/5 bg-red-600 m-auto top-20">
-            <section></section>
+          <div class="w-[70%] h-[70%] grid grid-cols-8 grid-rows-4 bg-red-600 top-20">
+            <section class="col-span-4"></section>
             <section></section>
             <section></section>
           </div>
