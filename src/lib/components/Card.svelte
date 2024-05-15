@@ -2,7 +2,7 @@
 	export const title = 'Default Title';
 </script>
 
-<div class="rounded shadow-md w-[400px] h-72 bg-[url('./project_test.jpeg')]">
+<div class="rounded shadow-md w-[375px] md:h-72 bg-[url('./project_test.jpeg')] m-auto">
 	<div class="flex flex-col space-y-1.5 p-4 backdrop-brightness-50">
 		<h3 class="text-2xl font-semibold leading-none tracking-tight">
 			{title}
@@ -12,9 +12,9 @@
 		</p>
 	</div>
 	<div class="p-6">
-		<div class="flex items-center justify-center h-full">
+		<div class="flex gap-5 items-center justify-center h-full">
 			<button
-				class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2"
+				class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 bg-black rounded-full px-2 flex items-center gap-2"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@
 				View Live
 			</button>
 			<button
-				class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2"
+				class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-black underline-offset-4 hover:underline h-10 outline rounded-full px-2 bg-teal-500/70 flex items-center gap-2"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

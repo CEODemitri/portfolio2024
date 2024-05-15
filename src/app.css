@@ -10,4 +10,5 @@
 
 body {
     background: linear-gradient(to bottom, #1A2223, #668589);
+    width: 100svw;
 }

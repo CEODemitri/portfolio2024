@@ -64,7 +64,7 @@
     </header>
 
   <!-- body -->
-    <main class="flex-1">
+    <main>
 
   <!-- hero section -->
       <section class="w-full py-12 md:py-24 lg:py-32 bg-[#1A2223] shadow-lg text-gray-50">
@@ -165,11 +165,11 @@
 
   <!-- projects section -->
       <section class="container py-10 text-gray-100 dark:text-gray-400">
-        <div class="grid gap-4 md:gap-8 lg:grid-cols-3 p-2 m-5">
+        <div class="grid gap-4 md:gap-8 lg:grid-cols-3">
           
           <Section>
-            <div class="space-y-4">
-              <div class="space-y-2">
+            <div class="space-y-4 px-4">
+              <div class="space-y-2 px-4">
                 <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">UX/UI Design</h2>
                 <p class="md:text-xl">
                   Showcasing my expertise in user experience and interface design.
@@ -239,112 +239,17 @@
                   class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   style=""
                 >
-                <!-- fix the width of the cards from overflowing on small screens -->
-                  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
+                <!-- the commented code uses the grid for responsiveness on the old cards. how do i mimic -->
+                  <!-- <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1"> -->
+                  <div class="flex flex-wrap gap-6">
                     <!-- project card 1 -->
                     <Card />
+
                     <!-- project card 2 -->
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                      <div class="flex flex-col space-y-1.5 p-4">
-                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                          Mobile App for Fitness Tracking
-                        </h3>
-                        <p class="text-sm text-muted-foreground">
-                          Designing a user-friendly mobile app for tracking fitness goals and progress.
-                        </p>
-                      </div>
-                      <div class="p-6">
-                        <div class="flex items-center justify-center h-full">
-                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="h-5 w-5"
-                            >
-                              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                            View Live
-                          </button>
-                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="h-5 w-5"
-                            >
-                              <polyline points="16 18 22 12 16 6"></polyline>
-                              <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                            View Code
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                    <Card />
+
                     <!-- project card 3 -->
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-                      <div class="flex flex-col space-y-1.5 p-4">
-                        <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                          E-commerce Website Redesign
-                        </h3>
-                        <p class="text-sm text-muted-foreground">
-                          Improving the user experience and interface of a leading e-commerce platform.
-                        </p>
-                      </div>
-                      <div class="p-6">
-                        <div class="flex items-center justify-center h-full">
-                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="h-5 w-5"
-                            >
-                              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                            View Live
-                          </button>
-                          <button class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 flex items-center gap-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="h-5 w-5"
-                            >
-                              <polyline points="16 18 22 12 16 6"></polyline>
-                              <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                            View Code
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                    <Card />
                   </div>
                 </div>
                 <div
@@ -369,8 +274,6 @@
                 ></div>
               </div>
             </div>
-
-            
           </Section>
 
           <!-- the template has the projects broke into 3 sections rendered together -->
@@ -540,7 +443,7 @@
         <Section>
           <SectionHeader {...about}/>
 
-          <div class="grid h-4/6 w-4/5 bg-red-600 m-auto relative top-20">
+          <div class="grid h-4/6 w-4/5 bg-red-600 m-auto top-20">
             <section></section>
             <section></section>
             <section></section>
