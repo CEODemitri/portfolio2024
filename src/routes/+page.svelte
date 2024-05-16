@@ -21,7 +21,7 @@
   }
 
   let jobSpace;
-  const jobs = ["Creative Developer", "Software Developer", "Web Developer", "UX/UI Designer"];
+  const jobs = ["Creative Developer", "Software Developer", "Father", "UX/UI Designer", "Artist"];
 
   onMount(() => {
     setInterval(() => {
