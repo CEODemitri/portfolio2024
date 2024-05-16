@@ -19,6 +19,8 @@
     subheading: "Let's get in touch!"
   }
 
+  const jobs = ["Creative Developer", "Software Developer", "Web Developer", "UX/UI Designer"]
+
 </script>
 <!--
 // v0 by Vercel.
@@ -439,14 +441,14 @@
       </section>
 
   <!-- about section -->
-      <div class="bg-indigo-500 p-2 m-5 rounded-lg">
+      <div class="bg-indigo-500 p-2 rounded-lg">
         <Section>
           <SectionHeader {...about}/>
 
-          <div class="w-[70%] h-[70%] grid grid-cols-8 grid-rows-4 bg-red-600 top-20">
-            <section class="col-span-4"></section>
-            <section></section>
-            <section></section>
+          <div class="w-[70%] h-[70%] grid grid-rows-3 grid-cols-2 bg-red-600 m-auto justify-center align-center">
+            <section class="row-span-3 col-span-1 bg-blue-500"></section>
+            <section class="row-span-1 bg-yellow-600"></section>
+            <section class="row-span-2 bg-green-400"></section>
           </div>
         </Section>
       </div>
