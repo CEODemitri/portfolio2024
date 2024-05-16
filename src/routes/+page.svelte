@@ -2,6 +2,7 @@
 	import Card from "../lib/components/Card.svelte";
 	import Section from "../lib/components/Section.svelte";
 	import SectionHeader from "../lib/components/SectionHeader.svelte";
+  import { onMount } from 'svelte';
 
   // section headers
   const about = {
@@ -19,13 +20,21 @@
     subheading: "Let's get in touch!"
   }
 
-  const jobs = ["Creative Developer", "Software Developer", "Web Developer", "UX/UI Designer"]
+  let jobSpace;
+  const jobs = ["Creative Developer", "Software Developer", "Web Developer", "UX/UI Designer"];
+
+  onMount(() => {
+    setInterval(() => {
+      switchJob();
+    }, 3000);
+  });
+
+  function switchJob() {
+    jobSpace.innerHTML = jobs[Math.floor(Math.random() * jobs.length)];
+  }
 
 </script>
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/WXDScCfAS7g
--->
+
 
 <div class="flex flex-col min-h-[100dvh]">
 
@@ -75,7 +84,7 @@
             <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Hallo ich bin Demitri.
             </h1>
-            <p class="text-gray-300 md:text-xl"><span class="job">Creative Developer</span> on a journey exploring the amazing world of technology.</p>
+            <p class="text-gray-300 text-sm md:text-lg h-lg leading-6"><span bind:this={jobSpace} id="job" class="text-xl bg-teal-800 px-3 py-1 rounded-md underline inline-block -skew-y-3">Creative Developer</span> on a journey exploring the amazing realm of technology. Approaching two years in November, I have decided to specialize in Web Dev and Design. Skilled with Ruby, Python and NodeJs so I can be impactful for any team. </p>
             <div class="flex flex-col sm:flex-row gap-2">
               <a
                 class="inline-flex h-10 items-center justify-center rounded-md bg-[#2978A0] text-gray-950 px-8 text-sm font-medium shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
