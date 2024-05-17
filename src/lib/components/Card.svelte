@@ -1,14 +1,25 @@
 <script>
 	export const title = 'Default Title';
+	export const descrip = 'Redesigning the user experience and interface for a leading enterprise software company.'
 </script>
 
-<div class="rounded shadow-md w-[375px] md:h-72 bg-[url('./project_test.jpeg')] m-auto">
+<div class="dad rounded-lg border shadow-sm">
+	<div>
+		<img
+		  src="./project_test.jpeg"
+		  width="400"
+		  height="300"
+		  alt="E-commerce Website"
+		  class="rounded-md object-cover w-full projects"
+		  style="aspect-ratio: 400 / 300; object-fit: cover;"
+		/>
+	  </div>
 	<div class="flex flex-col space-y-1.5 p-4 backdrop-brightness-50">
-		<h3 class="text-2xl font-semibold leading-none tracking-tight">
+		<h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
 			{title}
 		</h3>
 		<p class="text-sm text-muted-foreground">
-			Redesigning the user experience and interface for a leading enterprise software company.
+			{descrip}
 		</p>
 	</div>
 	<div class="p-6">

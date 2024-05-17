@@ -10,6 +10,11 @@
     subheading: "I design creative solutions with the ability to bring to life with Full Stack Development."
   }
 
+  const featured = {
+    sectionTitle: "Featured Projects",
+    subheading: "A selection of my most recent projects."
+  }
+
   const services = {
     sectionTitle: "Services",
     subheading: "Full Stack Developer with a wide range of skills. I Specialize in designing and coding Web Applications."
@@ -84,7 +89,7 @@
             <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Hallo ich bin Demitri.
             </h1>
-            <p class="text-gray-300 text-sm md:text-lg h-lg leading-6"><span bind:this={jobSpace} id="job" class="text-xl bg-teal-800 px-3 py-1 rounded-md underline inline-block -skew-y-3">Creative Developer</span> on a journey exploring the amazing realm of technology. Approaching two years in November, I have decided to specialize in Web Dev and Design. Skilled with Ruby, Python and NodeJs so I can be impactful for any team. </p>
+            <p class="text-gray-300 text-sm md:text-lg h-lg leading-6"><span bind:this={jobSpace} id="job" class="text-xl bg-teal-800 px-3 py-1 rounded-md underline inline-block -skew-y-3">Creative Developer</span> on a journey exploring the amazing realm of technology. On the learning path for two years in November, I have decided to specialize in Full Stack Web Dev and UI/UX Design. Also skilled with Ruby, Python and NodeJs: I can be impactful for any team. </p>
             <div class="flex flex-col sm:flex-row gap-2">
               <a
                 class="inline-flex h-10 items-center justify-center rounded-md bg-[#2978A0] text-gray-950 px-8 text-sm font-medium shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
@@ -176,114 +181,98 @@
 
   <!-- projects section -->
       <section class="container py-10 text-gray-100 dark:text-gray-400">
-        <div class="grid gap-4 md:gap-8 lg:grid-cols-3">
+        <div class="grid gap-4 md:gap-8 lg:grid-cols-3 px-6">
           
           <Section>
-            <div class="space-y-4 px-4">
-              <div class="space-y-2 px-4">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">UX/UI Design</h2>
-                <p class="md:text-xl">
-                  Showcasing my expertise in user experience and interface design.
-                </p>
-              </div>
-              
-              <div dir="ltr" data-orientation="horizontal">
-                <!-- project navigation -->
-                <div
-                  role="tablist"
-                  aria-orientation="horizontal"
-                  class="h-9 items-center justify-center rounded-lg bg-[muted] p-1 text-muted-foreground grid grid-cols-3 gap-2"
-                  tabindex="0"
-                  data-orientation="horizontal"
-                  style="outline: none;"
-                >
-                  <button
-                    type="button"
-                    role="tab"
-                    aria-selected="true"
-                    aria-controls="radix-:r1e:-content-ux"
-                    data-state="active"
-                    id="radix-:r1e:-trigger-ux"
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
-                    tabindex="-1"
-                    data-orientation="horizontal"
-                    data-radix-collection-item=""
-                  >
-                    UX
-                  </button>
-                  <button
-                    type="button"
-                    role="tab"
-                    aria-selected="false"
-                    aria-controls="radix-:r1e:-content-ui"
-                    data-state="inactive"
-                    id="radix-:r1e:-trigger-ui"
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
-                    tabindex="-1"
-                    data-orientation="horizontal"
-                    data-radix-collection-item=""
-                  >
-                    UI
-                  </button>
-                  <button
-                    type="button"
-                    role="tab"
-                    aria-selected="false"
-                    aria-controls="radix-:r1e:-content-research"
-                    data-state="inactive"
-                    id="radix-:r1e:-trigger-research"
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
-                    tabindex="-1"
-                    data-orientation="horizontal"
-                    data-radix-collection-item=""
-                  >
-                    Research
-                  </button>
-                </div>
-                <div
+            <SectionHeader {...featured}/>
+            <div dir="ltr" data-orientation="horizontal" class="w-full">
+              <div
+                role="tablist"
+                aria-orientation="horizontal"
+                class="h-9 items-center justify-center rounded-lg p-1 text-muted-foreground flex border-b border-gray-200 dark:border-gray-700"
+                tabindex="-1"
+                data-orientation="horizontal"
+                style="outline: none;"
+              >
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="radix-:r1a:-content-ux-ui"
                   data-state="active"
+                  id="radix-:r1a:-trigger-ux-ui"
+                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
+                  tabindex="-1"
                   data-orientation="horizontal"
-                  role="tabpanel"
-                  aria-labelledby="radix-:r1e:-trigger-ux"
-                  id="radix-:r1e:-content-ux"
-                  tabindex="0"
-                  class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                  style=""
+                  data-radix-collection-item=""
                 >
-                <!-- the commented code uses the grid for responsiveness on the old cards. how do i mimic -->
-                  <!-- <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1"> -->
-                  <div class="flex flex-wrap gap-6">
-                    <!-- project card 1 -->
-                    <Card />
-
-                    <!-- project card 2 -->
-                    <Card />
-
-                    <!-- project card 3 -->
-                    <Card />
-                  </div>
-                </div>
-                <div
+                  UX/UI Design
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="radix-:r1a:-content-web"
                   data-state="inactive"
+                  id="radix-:r1a:-trigger-web"
+                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
+                  tabindex="-1"
                   data-orientation="horizontal"
-                  role="tabpanel"
-                  aria-labelledby="radix-:r1e:-trigger-ui"
-                  hidden=""
-                  id="radix-:r1e:-content-ui"
-                  tabindex="0"
-                  class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                ></div>
-                <div
+                  data-radix-collection-item=""
+                >
+                  Web Development
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="radix-:r1a:-content-software"
                   data-state="inactive"
+                  id="radix-:r1a:-trigger-software"
+                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow"
+                  tabindex="-1"
                   data-orientation="horizontal"
-                  role="tabpanel"
-                  aria-labelledby="radix-:r1e:-trigger-research"
-                  hidden=""
-                  id="radix-:r1e:-content-research"
-                  tabindex="0"
-                  class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                ></div>
+                  data-radix-collection-item=""
+                >
+                  Software Development
+                </button>
               </div>
+              <div
+                data-state="active"
+                data-orientation="horizontal"
+                role="tabpanel"
+                aria-labelledby="radix-:r1a:-trigger-ux-ui"
+                id="radix-:r1a:-content-ux-ui"
+                tabindex="0"
+                class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                style="animation-duration: 0s;"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <Card/>
+                  <Card />
+                  <Card />
+                </div>
+              </div>
+              <div
+                data-state="inactive"
+                data-orientation="horizontal"
+                role="tabpanel"
+                aria-labelledby="radix-:r1a:-trigger-web"
+                hidden=""
+                id="radix-:r1a:-content-web"
+                tabindex="0"
+                class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              ></div>
+              <div
+                data-state="inactive"
+                data-orientation="horizontal"
+                role="tabpanel"
+                aria-labelledby="radix-:r1a:-trigger-software"
+                hidden=""
+                id="radix-:r1a:-content-software"
+                tabindex="0"
+                class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              ></div>
             </div>
           </Section>
 
@@ -450,11 +439,11 @@
       </section>
 
   <!-- about section -->
-      <div class="bg-indigo-500 p-2 rounded-lg">
+      <div class="bg-indigo-500 px-6 pt-2 rounded-lg">
         <Section>
           <SectionHeader {...about}/>
 
-          <div class="w-[70%] h-[70%] grid grid-rows-3 grid-cols-2 bg-red-600 m-auto justify-center align-center">
+          <div class="w-[70%] h-[70%] grid grid-rows-3 grid-cols-2 m-auto justify-center align-center">
             <section class="row-span-3 col-span-1 bg-blue-500"></section>
             <section class="row-span-1 bg-yellow-600"></section>
             <section class="row-span-2 bg-green-400"></section>
