@@ -181,11 +181,13 @@
       </section>
 
   <!-- projects section -->
-      <section class="container py-10 text-gray-100 dark:text-gray-400">
+      <section class="container py-7 text-gray-100 dark:text-gray-400">
         <div class="grid gap-4 md:gap-8 lg:grid-cols-3 md:px-6">
           
           <Section>
-            <SectionHeader {...featured}/>
+            <div class="px-6">
+              <SectionHeader {...featured}/>
+            </div>
             <Projects/>
           </Section>
         </div>
@@ -259,7 +261,7 @@
       </div>
 
   <!-- contact section -->
-      <div class="section p-2 m-5 bg-[#2978A0] rounded-lg text-white">
+      <div class="section p-2 m-5 bg-[#2978A0] rounded-lg text-dark">
         <Section>
           <SectionHeader {...contact}/>
 
