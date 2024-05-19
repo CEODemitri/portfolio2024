@@ -202,7 +202,10 @@
 
             <!-- education -->
             <section class="row-span-4 col-span-1 bg-blue-500 rounded-lg">
-              <h3 class="p-1">Education <span class="inline-block"><Mortarboard/></span></h3>
+              <section class="flex">
+                <h3 class="p-1">Education</h3>
+                <span class="bg-white p-1 rounded-full" ><Mortarboard/></span>
+              </section>
               <ul class="flex flex-col gap-4 mx-2 my-1">
                 <li>
                   <h4 class="text-gray-100 text-xs">Nov 2022 - Feb 2023</h4>
@@ -229,7 +232,10 @@
 
             <!-- experience -->
             <section class="row-span-2 bg-yellow-600">
-              <h3 class="p-1">Experience <span class="inline-block"><Hammer/></span></h3>
+              <section class="flex">
+                <h3 class="p-1">Experience</h3>
+                <span class="bg-white p-1 rounded-full"><Hammer/></span>
+              </section>
 
               <ul class="flex flex-col gap-4 mx-2 my-1">
                 <li>
@@ -245,7 +251,10 @@
               </ul>
             </section>
             <section class="row-span-2 bg-green-400 text-sm">
-              <h3 class="p-1">Goals <span class="inline-block"><CloudMoon/></span></h3>
+              <section class="flex">
+                <h3 class="p-1">Goals</h3>
+              <span class="inline-block bg-white p-1 rounded-full"><CloudMoon/></span>
+              </section>
 
               <p class="mx-2">Become a Professional Software Developer, assisting launching society into the future.</p>
             </section>

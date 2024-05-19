@@ -67,3 +67,17 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	@media (max-width: 525px) {
+		.dad {
+			width: 80%;
+			margin: auto;
+		}
+
+		img {
+			width: 325px;
+            height: 200px;
+		}
+	}
+</style>
