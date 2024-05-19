@@ -1,8 +1,6 @@
 <script>
-  import Projects from './Projects.svelte';
-
-	import Card from "../lib/components/Card.svelte";
-	import Section from "../lib/components/Section.svelte";
+	import Projects from "../lib/components/Projects.svelte";
+import Section from "../lib/components/Section.svelte";
 	import SectionHeader from "../lib/components/SectionHeader.svelte";
   import { onMount } from 'svelte';
 
@@ -187,7 +185,7 @@
           
           <Section>
             <SectionHeader {...featured}/>
-            <Projects></Projects>
+            <Projects/>
           </Section>
         </div>
       </section>
@@ -197,10 +195,57 @@
         <Section>
           <SectionHeader {...about}/>
 
-          <div class="w-[70%] h-[70%] grid grid-rows-3 grid-cols-2 m-auto justify-center align-center">
-            <section class="row-span-3 col-span-1 bg-blue-500"></section>
-            <section class="row-span-1 bg-yellow-600"></section>
-            <section class="row-span-2 bg-green-400"></section>
+          <div class="w-[80%] h-[70%] grid grid-rows-4 grid-cols-2 my-5 font-bold">
+
+            <!-- education -->
+            <section class="row-span-4 col-span-1 bg-blue-500 rounded-lg">
+              <h3 class="p-1">Education <span>[icon]</span></h3>
+              <ul class="flex flex-col gap-4 mx-2 my-1">
+                <li>
+                  <h4 class="text-gray-100 text-xs">Nov 2022 - Feb 2023</h4>
+                  <p class="text-gray-100 text-sm">Full Stack Development</p>
+                  <p class="text-gray-100 text-[0.6rem]">62hr Udemy Course</p>
+                </li>
+                <li>
+                  <h4 class="text-gray-100 text-xs"> Nov 2023 - April 2024</h4>
+                  <p class="text-gray-100 text-sm">Full Stack Development</p>
+                  <p class="text-gray-100 text-[0.6rem]">+230 LinkedIn Certificates</p>
+                </li>
+                <li>
+                  <h4 class="text-gray-100 text-xs"> Nov 2023 - Current</h4>
+                  <p class="text-gray-100 text-sm">UX/UI Design</p>
+                  <p class="text-gray-100 text-[0.6rem]">Google Certificate</p>
+                </li>
+                <li>
+                  <h4 class="text-gray-100 text-xs"> Dec 2023 - Current</h4>
+                  <p class="text-gray-100 text-sm">Full Stack Cloud Development</p>
+                  <p class="text-gray-100 text-[0.6rem]">IBM/edX MicroBachelor Degree</p>
+                </li>
+              </ul>
+            </section>
+
+            <!-- experience -->
+            <section class="row-span-2 bg-yellow-600">
+              <h3 class="p-1">Experience <span>[icon]</span></h3>
+
+              <ul class="flex flex-col gap-4 mx-2 my-1">
+                <li>
+                  <h4 class="text-gray-100 text-xs">Feb 2024 - Current</h4>
+                  <p class="text-gray-100 text-sm">Full Stack Development</p>
+                  <p class="text-gray-100 text-[0.6rem]">62hr Udemy Course</p>
+                </li>
+                <li>
+                  <h4 class="text-gray-100 text-xs"> Nov 2023 - April 2024</h4>
+                  <p class="text-gray-100 text-sm">Full Stack Development</p>
+                  <p class="text-gray-100 text-[0.6rem]">+230 LinkedIn Certificates</p>
+                </li>
+              </ul>
+            </section>
+            <section class="row-span-2 bg-green-400 text-sm">
+              <h3 class="p-1">Goals <span>[icon]</span></h3>
+
+              <p class="mx-2">Become a Professional Software Developer, assisting launching society into the future.</p>
+            </section>
           </div>
         </Section>
       </div>

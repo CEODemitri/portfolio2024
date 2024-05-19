@@ -1,7 +1,7 @@
 <script>
-	import Card from '../lib/components/Card.svelte';
+	import Card from './Card.svelte';
 	import { onMount } from 'svelte';
-    import { writable } from 'svelte/store';
+  import { writable } from 'svelte/store';
   
     // Function to toggle active state
     function toggleActive(tabId) {
