@@ -1,8 +1,9 @@
 <script>
 	import Projects from "../lib/components/Projects.svelte";
-import Section from "../lib/components/Section.svelte";
+  import Section from "../lib/components/Section.svelte";
 	import SectionHeader from "../lib/components/SectionHeader.svelte";
   import { onMount } from 'svelte';
+  import { Alarm, Bank, CloudMoon, Mortarboard, Hammer } from "svelte-bootstrap-icons";
 
   // section headers
   const about = {
@@ -89,7 +90,7 @@ import Section from "../lib/components/Section.svelte";
             <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Hallo ich bin Demitri.
             </h1>
-            <p class="text-gray-300 text-sm md:text-lg h-lg leading-6"><span bind:this={jobSpace} id="job" class="text-xl bg-teal-800 px-3 py-1 rounded-md underline inline-block -skew-y-3">Creative Developer</span> on a journey exploring the amazing realm of technology. On the learning path for two years in November, I have decided to specialize in Full Stack Web Dev and UI/UX Design. Also skilled with Ruby, Python and NodeJs: I can be impactful for any team. </p>
+            <p class="text-gray-300 text-sm md:text-lg h-lg leading-6 h-md"><span bind:this={jobSpace} id="job" class="text-xl bg-teal-800 px-3 py-1 rounded-md underline inline-block -skew-y-3">Creative Developer</span> on a journey exploring the amazing realm of technology. On the learning path for two years in November, I have decided to specialize in Full Stack Web Dev and UI/UX Design. Also skilled with Ruby, Python and NodeJs: I can be impactful for any team. </p>
             <div class="flex flex-col sm:flex-row gap-2">
               <a
                 class="inline-flex h-10 items-center justify-center rounded-md bg-[#2978A0] text-gray-950 px-8 text-sm font-medium shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
@@ -191,7 +192,7 @@ import Section from "../lib/components/Section.svelte";
       </section>
 
   <!-- about section -->
-      <div class="bg-indigo-500 px-6 pt-2 rounded-lg">
+      <div class="bg-indigo-500 px-6 py-2 rounded-lg">
         <Section>
           <SectionHeader {...about}/>
 
@@ -199,7 +200,7 @@ import Section from "../lib/components/Section.svelte";
 
             <!-- education -->
             <section class="row-span-4 col-span-1 bg-blue-500 rounded-lg">
-              <h3 class="p-1">Education <span>[icon]</span></h3>
+              <h3 class="p-1">Education <span class="inline-block"><Mortarboard/></span></h3>
               <ul class="flex flex-col gap-4 mx-2 my-1">
                 <li>
                   <h4 class="text-gray-100 text-xs">Nov 2022 - Feb 2023</h4>
@@ -226,7 +227,7 @@ import Section from "../lib/components/Section.svelte";
 
             <!-- experience -->
             <section class="row-span-2 bg-yellow-600">
-              <h3 class="p-1">Experience <span>[icon]</span></h3>
+              <h3 class="p-1">Experience <span class="inline-block"><Hammer/></span></h3>
 
               <ul class="flex flex-col gap-4 mx-2 my-1">
                 <li>
@@ -242,7 +243,7 @@ import Section from "../lib/components/Section.svelte";
               </ul>
             </section>
             <section class="row-span-2 bg-green-400 text-sm">
-              <h3 class="p-1">Goals <span>[icon]</span></h3>
+              <h3 class="p-1">Goals <span class="inline-block"><CloudMoon/></span></h3>
 
               <p class="mx-2">Become a Professional Software Developer, assisting launching society into the future.</p>
             </section>
