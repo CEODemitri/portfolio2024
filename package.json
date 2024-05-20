@@ -29,5 +29,8 @@
   "type": "module",
   "resolutions": {
     "string-width": "4.2.3"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
   }
 }

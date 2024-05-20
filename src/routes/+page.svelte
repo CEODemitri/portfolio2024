@@ -1,17 +1,17 @@
 <script>
 	import Footer from '../lib/components/Footer.svelte';
-import Form from '../lib/components/Form.svelte';
-import Projects from '../lib/components/Projects.svelte';
+	import Form from '../lib/components/Form.svelte';
+	import Projects from '../lib/components/Projects.svelte';
+	import IWeb from '../lib/components/SVG/IWeb.svelte';
+	import Software from '../lib/components/SVG/Software.svelte';
+	import Ui from '../lib/components/SVG/Ui.svelte';
 	import Section from '../lib/components/Section.svelte';
 	import SectionHeader from '../lib/components/SectionHeader.svelte';
 	import { onMount } from 'svelte';
 	import {
-		Alarm,
-		Bank,
 		CloudMoon,
 		Mortarboard,
 		ClockHistory,
-		Ban,
 		Airplane,
 		Speedometer2,
 		Binoculars
@@ -52,37 +52,38 @@ import Projects from '../lib/components/Projects.svelte';
 	function switchJob() {
 		jobSpace.innerHTML = jobs[Math.floor(Math.random() * jobs.length)];
 	}
+
+	import { gsap } from 'gsap';
+
+	import { CustomEase } from 'gsap/CustomEase';
+	import { RoughEase, ExpoScaleEase, SlowMo } from 'gsap/EasePack';
+
+	import { Flip } from 'gsap/Flip';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+	import { Draggable } from 'gsap/Draggable';
+	import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+	import { EaselPlugin } from 'gsap/EaselPlugin';
+	import { PixiPlugin } from 'gsap/PixiPlugin';
+	import { TextPlugin } from 'gsap/TextPlugin';
+
+	gsap.registerPlugin(
+		Flip,
+		ScrollTrigger,
+		ScrollToPlugin,
+		Draggable,
+		MotionPathPlugin,
+		EaselPlugin,
+		PixiPlugin,
+		TextPlugin,
+		RoughEase,
+		ExpoScaleEase,
+		SlowMo,
+		CustomEase
+	);
 </script>
 
 <div class="flex flex-col min-h-[100dvh]">
-	<!-- navbar -->
-	<header class="bg-eerie-900 text-gray-50 px-4 lg:px-6 h-14 flex items-center">
-		<a class="flex items-center justify-center" href="/">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				class="h-6 w-6"
-			>
-				<polyline points="16 18 22 12 16 6"></polyline>
-				<polyline points="8 6 2 12 8 18"></polyline>
-			</svg>
-			<span class="sr-only">Demitri Echols' Portfolio</span>
-		</a>
-		<nav class="ml-auto flex gap-4 sm:gap-6">
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> UX/UI </a>
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> Web </a>
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> Software </a>
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> About </a>
-		</nav>
-	</header>
-
 	<!-- body -->
 	<main>
 		<!-- hero section -->
@@ -96,7 +97,7 @@ import Projects from '../lib/components/Projects.svelte';
 						<span
 							bind:this={jobSpace}
 							id="job"
-							class="text-xl bg-teal-800 px-3 py-1 rounded-md underline inline-block -skew-y-3"
+							class="text-xl bg-grape-500 px-3 py-1 rounded-md underline inline-block -skew-y-3"
 							>Creative Developer</span
 						> on a journey exploring the amazing realm of technology. On the learning path for two years
 						in November, I have decided to specialize in Full Stack Web Dev and UI/UX Design. Also skilled
@@ -104,14 +105,14 @@ import Projects from '../lib/components/Projects.svelte';
 					</p>
 					<div class="flex flex-col sm:flex-row gap-2">
 						<a
-							class="inline-flex h-10 items-center justify-center rounded-md bg-[#2978A0] text-gray-950 px-8 text-sm font-medium shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-							href="#"
+							class="inline-flex h-10 items-center justify-center rounded-md bg-sapphire-400/70 text-gray-950 px-8 text-sm font-medium shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
+							href="#projects"
 						>
 							View Work
 						</a>
 						<a
 							class="inline-flex h-10 items-center justify-center rounded-md border border-red-400 bg-transparent px-8 text-sm font-medium text-gray-50 shadow-sm transition-colors hover:bg-gray-50/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-							href="#"
+							href="#contact"
 						>
 							Contact Me
 						</a>
@@ -119,72 +120,17 @@ import Projects from '../lib/components/Projects.svelte';
 				</div>
 				<div class="grid grid-cols-3 gap-4">
 					<div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="h-8 w-8 text-gray-50"
-						>
-							<rect width="18" height="7" x="3" y="3" rx="1"></rect>
-							<rect width="9" height="7" x="3" y="14" rx="1"></rect>
-							<rect width="5" height="7" x="16" y="14" rx="1"></rect>
-						</svg>
+						<Ui />
 						<span class="text-sm font-medium text-gray-50">UI/UX</span>
 					</div>
 
 					<div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="h-8 w-8 text-gray-50"
-						>
-							<polyline points="16 18 22 12 16 6"></polyline>
-							<polyline points="8 6 2 12 8 18"></polyline>
-						</svg>
+						<IWeb />
 						<span class="text-sm font-medium text-gray-50">Web</span>
 					</div>
 
 					<div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="h-8 w-8 text-gray-50"
-						>
-							<path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path>
-							<path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
-							<path d="M12 2v2"></path>
-							<path d="M12 22v-2"></path>
-							<path d="m17 20.66-1-1.73"></path>
-							<path d="M11 10.27 7 3.34"></path>
-							<path d="m20.66 17-1.73-1"></path>
-							<path d="m3.34 7 1.73 1"></path>
-							<path d="M14 12h8"></path>
-							<path d="M2 12h2"></path>
-							<path d="m20.66 7-1.73 1"></path>
-							<path d="m3.34 17 1.73-1"></path>
-							<path d="m17 3.34-1 1.73"></path>
-							<path d="m11 13.73-4 6.93"></path>
-						</svg>
+						<Software />
 						<span class="text-sm font-medium text-gray-50">Software</span>
 					</div>
 				</div>
@@ -192,10 +138,10 @@ import Projects from '../lib/components/Projects.svelte';
 		</section>
 
 		<!-- projects section -->
-		<section class="container py-7 text-gray-100 dark:text-gray-400">
+		<section class="container py-7 text-gray-100" id="projects">
 			<div class="grid gap-4 md:gap-8 lg:grid-cols-3 md:px-6">
 				<Section>
-					<div class="px-6">
+					<div class="px-1">
 						<SectionHeader {...featured} />
 					</div>
 					<Projects />
@@ -204,7 +150,7 @@ import Projects from '../lib/components/Projects.svelte';
 		</section>
 
 		<!-- about section -->
-		<div class="bg-indigo-500 px-6 py-2 rounded-lg">
+		<div class="bg-sapphire-700/80 px-6 py-2 rounded-lg">
 			<Section>
 				<SectionHeader {...about} />
 
@@ -310,22 +256,28 @@ import Projects from '../lib/components/Projects.svelte';
 		</div>
 
 		<!-- contact section -->
-		<div class="section p-2 m-5 bg-[#2978A0] rounded-lg">
+		<div class="section p-2 m-5 bg-[#2978A0] rounded-lg" id="contact">
 			<Section>
 				<SectionHeader {...contact} />
 
-        <div class="p-2 md:flex md:m-5 bg-eerie-900 w-fit rounded-md">
-          <img src="https://images.unsplash.com/photo-1716040313180-aa8df510ccfb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" class="col-span-2" width="175" height="50">
-          <section class="p-1">
-            <Form/>
-          </section>
-        </div>
+				<div class="p-2 md:flex md:m-5 bg-eerie-900 w-fit rounded-md">
+					<img
+						src="https://images.unsplash.com/photo-1716040313180-aa8df510ccfb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+						class="col-span-2"
+						width="175"
+						height="50"
+					/>
+					<section class="p-1">
+						<Form />
+					</section>
+				</div>
 			</Section>
 		</div>
 
 		<!-- footer -->
-		<footer class="bg-eerie-900 dark:bg-eerie-100 p-2 h-[175px] md:h-[300px]">
-      <Footer/>
-    </footer>
+		<footer class="bg-eerie-900 dark:bg-eerie-100">
+			<Footer />
+		</footer>
 	</main>
 </div>
