@@ -1,19 +1,20 @@
 <script>
 	export const title = 'Default Title';
-	export const descrip = 'Redesigning the user experience and interface for a leading enterprise software company.'
+	export const descrip =
+		'Redesigning the user experience and interface for a leading enterprise software company.';
 </script>
 
 <div class="dad rounded-lg border shadow-sm">
 	<div>
 		<img
-		  src="./project_test.jpeg"
-		  width="400"
-		  height="300"
-		  alt="E-commerce Website"
-		  class="rounded-md object-cover w-full projects"
-		  style="aspect-ratio: 400 / 300; object-fit: cover;"
+			src="./project_test.jpeg"
+			width="400"
+			height="300"
+			alt="E-commerce Website"
+			class="rounded-md object-cover w-full projects"
+			style="aspect-ratio: 400 / 300; object-fit: cover;"
 		/>
-	  </div>
+	</div>
 	<div class="flex flex-col space-y-1.5 p-4 backdrop-brightness-50">
 		<h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
 			{title}
@@ -77,7 +78,7 @@
 
 		img {
 			width: 325px;
-            height: 200px;
+			height: 200px;
 		}
 	}
 </style>

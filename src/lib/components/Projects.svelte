@@ -3,6 +3,11 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 
+	const fakeProject = {
+		title: 'Project',
+		descrip: 'Project description'
+	}
+
 	// Function to toggle active state
 	function toggleActive(tabId) {
 		activeTab.set(tabId);
@@ -98,7 +103,7 @@
 			: 'hidden'} mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
 	>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-			<Card />
+			<Card {...fakeProject}/>
 			<Card />
 			<Card />
 		</div>
