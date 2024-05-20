@@ -1,6 +1,7 @@
 <script>
 	import Footer from '../lib/components/Footer.svelte';
 	import Form from '../lib/components/Form.svelte';
+	import HeroTitle from '../lib/components/HeroTitle.svelte';
 	import Projects from '../lib/components/Projects.svelte';
 	import IWeb from '../lib/components/SVG/IWeb.svelte';
 	import Software from '../lib/components/SVG/Software.svelte';
@@ -54,17 +55,15 @@
 	}
 </script>
 
-<div class="flex flex-col min-h-[100dvh]">
+<div class="flex flex-col min-h-[100dvh] text-eerie-100">
 	<!-- body -->
 	<main>
 		<!-- hero section -->
-		<section class="w-full py-12 md:py-24 lg:py-32 bg-[#1A2223] shadow-lg text-gray-50">
+		<section class="w-full py-12 md:py-24 lg:py-32 bg-[#1A2223] shadow-lg">
 			<div class="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-				<div class="space-y-4">
-					<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-						Hallo ich bin Demitri.
-					</h1>
-					<p class="text-gray-300 text-sm md:text-lg h-lg leading-6 h-md">
+				<div class="space-y-4 md:pl-5">
+					<HeroTitle />
+					<p class="text-sm md:text-lg h-lg leading-6 h-md">
 						<span
 							bind:this={jobSpace}
 							id="job"
@@ -106,13 +105,19 @@
 					</div>
 				</div>
 			</div>
+			<img
+				src="src/lib/assets/tiger.png"
+				alt="tiger"
+				height="250"
+				class="hidden w-[525px] h-[300px] md:block absolute right-4 top-96 lg:top-80"
+			/>
 		</section>
 
 		<!-- projects section -->
-		<section class="container py-7 text-gray-100" id="projects">
+		<section class="container py-7" id="projects">
 			<div class="grid gap-4 md:gap-8 lg:grid-cols-3 md:px-6">
 				<Section>
-					<div class="px-1">
+					<div class="px-4">
 						<SectionHeader {...featured} />
 					</div>
 					<Projects />
@@ -121,68 +126,68 @@
 		</section>
 
 		<!-- about section -->
-		<div class="bg-sapphire-700/80 px-6 py-2 rounded-lg">
+		<div class="bg-sapphire-900/40 px-6 py-2 rounded-lg">
 			<Section>
 				<SectionHeader {...about} />
 
 				<div class="w-[80%] h-[70%] grid grid-rows-4 grid-cols-2 my-5 font-bold shadow-lg">
 					<!-- education -->
-					<section class="row-span-4 col-span-1 bg-blue-500 rounded-lg">
+					<section class="row-span-4 col-span-1 bg-moonstone-800 rounded-tl-lg">
 						<section class="flex items-center">
-							<h3 class="p-1 text-white">Education</h3>
+							<h3 class="p-1">Education</h3>
 							<span class="bg-white p-1 block rounded-full"><Mortarboard /></span>
 						</section>
 						<ul class="flex flex-col gap-4 mx-2 my-1">
 							<li>
-								<h4 class="text-gray-100 text-xs">Dec 2023 - Current</h4>
-								<p class="text-gray-100 text-sm">Full Stack Cloud Development</p>
-								<p class="text-gray-100 text-[0.6rem]">IBM/edX MicroBachelor Degree</p>
+								<h4 class="text-xs">Dec 2023 - Current</h4>
+								<p class="text-sm">Full Stack Cloud Development</p>
+								<p class="text-[0.6rem]">IBM/edX MicroBachelor Degree</p>
 							</li>
 							<li>
-								<h4 class="text-gray-100 text-xs">Oct 2023 - Current</h4>
-								<p class="text-gray-100 text-sm">UX Design</p>
-								<p class="text-gray-100 text-[0.6rem]">Google Certificate</p>
+								<h4 class="text-xs">Oct 2023 - Current</h4>
+								<p class="text-sm">UX Design</p>
+								<p class="text-[0.6rem]">Google Certificate</p>
 							</li>
 							<li>
-								<h4 class="text-gray-100 text-xs">July 2023 - Dec 2023</h4>
-								<p class="text-gray-100 text-sm">Full Stack Development</p>
-								<p class="text-gray-100 text-[0.6rem]">+220 LinkedIn Certificates</p>
+								<h4 class="text-xs">July 2023 - Dec 2023</h4>
+								<p class="text-sm">Full Stack Development</p>
+								<p class="text-[0.6rem]">+220 LinkedIn Certificates</p>
 							</li>
 							<li>
-								<h4 class="text-gray-100 text-xs">Nov 2022 - Feb 2023</h4>
-								<p class="text-gray-100 text-sm">Full Stack Development</p>
-								<p class="text-gray-100 text-[0.6rem]">62hr Udemy Course</p>
+								<h4 class="text-xs">Nov 2022 - Feb 2023</h4>
+								<p class="text-sm">Full Stack Development</p>
+								<p class="text-[0.6rem]">62hr Udemy Course</p>
 							</li>
 						</ul>
 					</section>
 
 					<!-- experience -->
-					<section class="row-span-2 bg-eerie-500">
+					<section class="row-span-2 bg-eerie-600">
 						<section class="flex items-center">
-							<h3 class="p-1 text-white">Experience</h3>
+							<h3 class="p-1">Experience</h3>
 							<span class="bg-white p-1 rounded-full"><ClockHistory /></span>
 						</section>
 
 						<ul class="flex flex-col gap-4 mx-2 my-1">
 							<li>
-								<h4 class="text-gray-100 text-xs">Feb 2024 - Current</h4>
-								<p class="text-gray-100 text-sm">Full Stack Development</p>
-								<p class="text-gray-100 text-[0.6rem]">62hr Udemy Course</p>
+								<h4 class="text-xs">Feb 2024 - Current</h4>
+								<p class="text-sm">Full Stack Development</p>
+								<p class="text-[0.6rem]">62hr Udemy Course</p>
 							</li>
 							<li>
-								<h4 class="text-gray-100 text-xs">July 2023 - Dec 2023</h4>
-								<p class="text-gray-100 text-sm">Full Stack Development</p>
-								<p class="text-gray-100 text-[0.6rem]">+220 LinkedIn Certificates</p>
+								<h4 class="text-xs">July 2023 - Dec 2023</h4>
+								<p class="text-sm">Full Stack Development</p>
+								<p class="text-[0.6rem]">+220 LinkedIn Certificates</p>
 							</li>
 						</ul>
 					</section>
-					<section class="row-span-2 bg-blue-900 text-sm">
+					<section class="row-span-2 bg-sapphire-900 text-sm">
 						<section class="flex items-center">
-							<h3 class="p-1 text-white">Goals</h3>
+							<h3 class="p-1">Goals</h3>
 							<span class="inline-block bg-white p-1 rounded-full"><CloudMoon /></span>
 						</section>
 
-						<p class="mx-2 text-white">
+						<p class="mx-2">
 							Become a Professional Software Developer, assisting launching society into the future.
 						</p>
 					</section>
@@ -191,7 +196,7 @@
 		</div>
 
 		<!-- service section -->
-		<div class="section p-2 m-5 bg-[#1A2223] rounded-lg text-white">
+		<div class="section p-2 m-5 bg-[#1A2223] rounded-lg">
 			<Section>
 				<SectionHeader {...services} />
 
@@ -227,7 +232,7 @@
 		</div>
 
 		<!-- contact section -->
-		<div class="section p-2 m-5 bg-[#2978A0] rounded-lg" id="contact">
+		<div class="section p-2 m-5 bg-moonstone-900/80 rounded-lg" id="contact">
 			<Section>
 				<SectionHeader {...contact} />
 
