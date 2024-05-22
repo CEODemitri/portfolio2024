@@ -1,13 +1,14 @@
 <script>
-	export const title = 'Default Title';
-	export const descrip =
+	export let title = 'Default Title';
+	export let descrip =
 		'Redesigning the user experience and interface for a leading enterprise software company.';
+	export let surce = './project_test.jpeg';
 </script>
 
 <div class="dad rounded-lg border shadow-sm">
 	<div>
 		<img
-			src="./project_test.jpeg"
+			src = {surce}
 			width="400"
 			height="300"
 			alt="E-commerce Website"

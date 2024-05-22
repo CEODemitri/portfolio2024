@@ -1,5 +1,6 @@
 <script>
-	import Footer from '../lib/components/Footer.svelte';
+	import Card from '../lib/components/Card.svelte';
+import Footer from '../lib/components/Footer.svelte';
 	import Form from '../lib/components/Form.svelte';
 	import HeroTitle from '../lib/components/HeroTitle.svelte';
 	import Projects from '../lib/components/Projects.svelte';
@@ -40,6 +41,11 @@
 		sectionTitle: 'Contact Me',
 		subheading: "Let's get in touch!"
 	};
+
+	const fakeJob =  {
+		title: "Hero",
+		descrip: "Oh yeah"
+	}
 
 	let jobSpace;
 	const jobs = ['Creative Developer', 'Software Developer', 'Father', 'UX/UI Designer', 'Artist'];
