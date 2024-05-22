@@ -1,0 +1,1 @@
+<div class="h-96 w-24 rounded-md bg-red-600"></div>

@@ -12,7 +12,8 @@
     const school = {
         title: 'School',
         descrip: 'School description',
-		surce: 'src/lib/assets/schoolUX.png'
+		source: 'src/lib/assets/schoolUX.png',
+		href: '../../Projects/School'
     };
 
     // Function to toggle active state

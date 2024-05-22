@@ -2,13 +2,14 @@
 	export let title = 'Default Title';
 	export let descrip =
 		'Redesigning the user experience and interface for a leading enterprise software company.';
-	export let surce = './project_test.jpeg';
+	export let source = './project_test.jpeg';
+	export let href  = '/';
 </script>
 
 <div class="dad rounded-lg border shadow-sm">
 	<div>
 		<img
-			src = {surce}
+			src = {source}
 			width="400"
 			height="300"
 			alt="E-commerce Website"
@@ -26,6 +27,7 @@
 	</div>
 	<div class="p-6">
 		<div class="flex gap-5 items-center justify-center h-full">
+			<!-- for ux, find a way to omit one of these buttons.  -->
 			<button
 				class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 bg-black rounded-full px-2 flex items-center gap-2"
 			>
@@ -64,7 +66,7 @@
 					<polyline points="16 18 22 12 16 6"></polyline>
 					<polyline points="8 6 2 12 8 18"></polyline>
 				</svg>
-				View Code
+				<a href="{href}">View Live</a>
 			</button>
 		</div>
 	</div>
