@@ -3,16 +3,18 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 
-	const fakeProject = {
-		title: 'Project',
-		descrip: 'Project description'
-	};
-
 	const school = {
-		title: 'School',
-		descrip: 'School description',
+		title: 'School of Music',
+		descrip: 'Build an Enrollment Page',
 		source: 'src/lib/assets/schoolUX.png',
 		href: '../../Projects/School'
+	};
+
+	const googleUX = {
+		title: 'Zen Dojo Inventory',
+		descrip: 'course Project from Google UX Certificate',
+		source: 'src/lib/assets/googleThumbnail.png',
+		href: '#'
 	};
 
 	// Function to toggle active state
@@ -97,7 +99,7 @@
 	>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			<Card {...school} />
-			<Card />
+			<Card {...googleUX} />
 			<Card />
 		</div>
 	</div>
