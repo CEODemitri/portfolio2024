@@ -1,6 +1,6 @@
 <script>
 	import Card from '../lib/components/Card.svelte';
-import Footer from '../lib/components/Footer.svelte';
+	import Footer from '../lib/components/Footer.svelte';
 	import Form from '../lib/components/Form.svelte';
 	import HeroTitle from '../lib/components/HeroTitle.svelte';
 	import Projects from '../lib/components/Projects.svelte';
@@ -31,8 +31,8 @@ import Footer from '../lib/components/Footer.svelte';
 		subheading: 'A selection of my most recent projects.'
 	};
 
-	const services = {
-		sectionTitle: 'Services',
+	const skills = {
+		sectionTitle: 'Skills',
 		subheading:
 			'Full Stack Developer with a wide range of skills. I Specialize in designing and coding Web Applications.'
 	};
@@ -42,10 +42,10 @@ import Footer from '../lib/components/Footer.svelte';
 		subheading: "Let's get in touch!"
 	};
 
-	const fakeJob =  {
-		title: "Hero",
-		descrip: "Oh yeah"
-	}
+	const fakeJob = {
+		title: 'Hero',
+		descrip: 'Oh yeah'
+	};
 
 	let jobSpace;
 	const jobs = ['Creative Developer', 'Software Developer', 'Father', 'UX/UI Designer', 'Artist'];
@@ -61,15 +61,15 @@ import Footer from '../lib/components/Footer.svelte';
 	}
 </script>
 
-<div class="flex flex-col min-h-[100dvh] text-eerie-100">
+<div class="flex flex-col text-eerie-100">
 	<!-- body -->
 	<main>
 		<!-- hero section -->
-		<section class="w-full py-12 md:py-24 lg:py-32 bg-[#1A2223] shadow-lg">
-			<div class="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+		<section class="w-full py-2 md:py-4 lg:py-8 bg-eerie-900 shadow-lg h-[65vh] md:h-[40vh]">
+			<div class="container px-4 md:px-6">
 				<div class="space-y-4 md:pl-5">
 					<HeroTitle />
-					<p class="text-sm md:text-lg h-lg leading-6 h-md">
+					<p class="text-sm h-lg leading-6 h-md w-full">
 						<span
 							bind:this={jobSpace}
 							id="job"
@@ -79,161 +79,38 @@ import Footer from '../lib/components/Footer.svelte';
 						in November, I have decided to specialize in Full Stack Web Dev and UI/UX Design. Also skilled
 						with Ruby, Python and NodeJs: I can be impactful for any team.
 					</p>
-					<div class="flex flex-col sm:flex-row gap-2">
-						<a
-							class="inline-flex h-10 items-center justify-center rounded-md bg-sapphire-400/70 text-gray-950 px-8 text-sm font-medium shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-							href="#projects"
-						>
-							View Work
-						</a>
-						<a
-							class="inline-flex h-10 items-center justify-center rounded-md border border-red-400 bg-transparent px-8 text-sm font-medium text-gray-50 shadow-sm transition-colors hover:bg-gray-50/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-							href="#contact"
-						>
-							Contact Me
-						</a>
-					</div>
 				</div>
-				<div class="grid grid-cols-3 gap-4">
-					<div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center">
-						<Ui />
-						<span class="text-sm font-medium text-gray-50">UI/UX</span>
-					</div>
 
-					<div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center">
-						<IWeb />
-						<span class="text-sm font-medium text-gray-50">Web</span>
-					</div>
-
-					<div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center">
-						<Software />
-						<span class="text-sm font-medium text-gray-50">Software</span>
-					</div>
-				</div>
+				<div
+					class="h-80 mt-6 bg-white bg-[url('src/lib/assets/codeface.png')] bg-no-repeat bg-center bg-cover rounded-lg"
+				></div>
 			</div>
-			<img
-				src="src/lib/assets/tiger.png"
-				alt="tiger"
-				height="250"
-				class="hidden w-[525px] h-[300px] md:block absolute right-4 top-96 lg:top-80"
-			/>
 		</section>
 
 		<!-- projects section -->
-		<section class="container py-7" id="projects">
+		<div class="container py-7 mt-20" id="projects">
 			<div class="grid gap-4 md:gap-8 lg:grid-cols-3 md:px-6">
 				<Section>
 					<div class="px-4">
-						<SectionHeader {...featured} />
+						<SectionHeader {...featured}></SectionHeader>
 					</div>
 					<Projects />
 				</Section>
 			</div>
-		</section>
-
-		<!-- about section -->
-		<div class="bg-sapphire-900/40 px-6 py-2 rounded-lg">
-			<Section>
-				<SectionHeader {...about} />
-
-				<div class="w-[80%] h-[70%] grid grid-rows-4 grid-cols-2 my-5 font-bold shadow-lg">
-					<!-- education -->
-					<section class="row-span-4 col-span-1 bg-moonstone-800 rounded-tl-lg">
-						<section class="flex items-center">
-							<h3 class="p-1">Education</h3>
-							<span class="bg-white p-1 block rounded-full"><Mortarboard /></span>
-						</section>
-						<ul class="flex flex-col gap-4 mx-2 my-1">
-							<li>
-								<h4 class="text-xs">Dec 2023 - Current</h4>
-								<p class="text-sm">Full Stack Cloud Development</p>
-								<p class="text-[0.6rem]">IBM/edX MicroBachelor Degree</p>
-							</li>
-							<li>
-								<h4 class="text-xs">Oct 2023 - Current</h4>
-								<p class="text-sm">UX Design</p>
-								<p class="text-[0.6rem]">Google Certificate</p>
-							</li>
-							<li>
-								<h4 class="text-xs">July 2023 - Dec 2023</h4>
-								<p class="text-sm">Full Stack Development</p>
-								<p class="text-[0.6rem]">+220 LinkedIn Certificates</p>
-							</li>
-							<li>
-								<h4 class="text-xs">Nov 2022 - Feb 2023</h4>
-								<p class="text-sm">Full Stack Development</p>
-								<p class="text-[0.6rem]">62hr Udemy Course</p>
-							</li>
-						</ul>
-					</section>
-
-					<!-- experience -->
-					<section class="row-span-2 bg-eerie-600">
-						<section class="flex items-center">
-							<h3 class="p-1">Experience</h3>
-							<span class="bg-white p-1 rounded-full"><ClockHistory /></span>
-						</section>
-
-						<ul class="flex flex-col gap-4 mx-2 my-1">
-							<li>
-								<h4 class="text-xs">Feb 2024 - Current</h4>
-								<p class="text-sm">Full Stack Development</p>
-								<p class="text-[0.6rem]">62hr Udemy Course</p>
-							</li>
-							<li>
-								<h4 class="text-xs">July 2023 - Dec 2023</h4>
-								<p class="text-sm">Full Stack Development</p>
-								<p class="text-[0.6rem]">+220 LinkedIn Certificates</p>
-							</li>
-						</ul>
-					</section>
-					<section class="row-span-2 bg-sapphire-900 text-sm">
-						<section class="flex items-center">
-							<h3 class="p-1">Goals</h3>
-							<span class="inline-block bg-white p-1 rounded-full"><CloudMoon /></span>
-						</section>
-
-						<p class="mx-2">
-							Become a Professional Software Developer, assisting launching society into the future.
-						</p>
-					</section>
-				</div>
-			</Section>
 		</div>
 
-		<!-- service section -->
-		<div class="section p-2 m-5 bg-[#1A2223] rounded-lg">
+		<!-- about section -->
+		<div class="px-6 py-2 rounded-lg m-auto">
 			<Section>
-				<SectionHeader {...services} />
-
-				<section class="mt-5 p-1 flex flex-wrap gap-5">
-					<article>
-						<div class="icon">
-							<Airplane width={40} height={40} />
-						</div>
-						<h3>Creative Web Design</h3>
-						<p class="text-sm w-[40ch]">
-							Lorem ipsum suscipit tenetur magnam ullam veniam velit unde fugit totam, voluptas fuga
-							itaque similique sapiente error non at! Quidem.
-						</p>
-					</article>
-					<article>
-						<Speedometer2 width={40} height={40} />
-						<h3>Speedy Development</h3>
-						<p class="text-sm w-[40ch]">
-							Quo laborum suscipit tenetur magnam ullam veniam velit unde fugit totam, voluptas fuga
-							itaque similique sapiente error non at! Quidem.
-						</p>
-					</article>
-					<article>
-						<Binoculars width={40} height={40} />
-						<h3>Special Perspective</h3>
-						<p class="text-sm w-[40ch]">
-							Voluptatum, porro quo laborum suscipit tenetur magnam ullam veniam velit unde fugit
-							totam, voluptas fuga itaque similique sapiente error non at! Quidem.
-						</p>
-					</article>
-				</section>
+				<div class="w-full flex justify-center items-center">
+					<div class="h-96 w-48 bg-eerie-900 shadow"></div>
+					<div class="h-[700px] w-96 bg-eerie-500 shadow-lg rounded-t-xl">
+						<h2>ABOUT ME</h2>
+					</div>
+					<div class="h-[425px] w-96 bg-sapphire-700/30 shadow-2xl">
+						<SectionHeader {...skills} />
+					</div>
+				</div>
 			</Section>
 		</div>
 

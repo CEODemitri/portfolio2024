@@ -21,12 +21,12 @@
 				// Animation for .o element after letters animation completes
 				// Re-query for elements with class "o" and animate them
 				const toRotate = heroText.querySelector('.rotate');
-            	gsap.to(toRotate, { rotation: 95, duration: 2 });
+				gsap.to(toRotate, { rotation: 95, duration: 2 });
 			}
 		});
 	});
 </script>
 
-<h1 bind:this={heroText} class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+<h1 bind:this={heroText} class="text-2xl font-bold tracking-tighter sm:text-5xl md:text-4xl">
 	Hallo ich bin <span class="rotate">D</span>emitri.
 </h1>
