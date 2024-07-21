@@ -4,7 +4,7 @@
 
 	onMount(() => {
 		try {
-			gsap.to('.box', { rotation: 27, x: 100, duration: 1 });
+			gsap.to('.box', { rotation: 27, x: 100, scale: 0.8, duration: 1 });
 		} catch (error) {
 			console.error('Error in GSAP animation:', error);
 		}
