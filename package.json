@@ -30,6 +30,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@fontsource-variable/josefin-sans": "^5.0.21",
+    "@fontsource/open-sans": "^5.0.28",
+    "@fontsource/rubik-dirt": "^5.0.20",
     "gsap": "^3.12.5"
   }
 }

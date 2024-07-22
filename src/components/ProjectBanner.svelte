@@ -5,7 +5,7 @@
 		alt="Project Banner"
 		class="w-full h-[300px] object-cover object-center"
 	/>
-	<div class="py-8 md:py-12 lg:py-16 relative z-10">
+	<div class="py-4 md:py-8 relative z-10">
 		<div class="max-w-2xl mx-auto text-center space-y-4">
 			<h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">
 				A brief description of the project.

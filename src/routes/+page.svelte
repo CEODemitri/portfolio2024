@@ -2,7 +2,6 @@
 	// GSAP EXAMPLE
 	// import { onMount } from 'svelte';
 	// import { gsap } from 'gsap';
-	// import Carousel from '../components/Carousel.svelte';
 
 	// onMount(() => {
 	// 	try {
@@ -12,8 +11,24 @@
 	// 	}
 	// });
 
+	// Placed the text here to test if works across site: CONFIRMED
+	// Supports weights 100-700
+	import '@fontsource-variable/josefin-sans';
+	import '@fontsource/rubik-dirt';
 	import ProjectBanner from '../components/ProjectBanner.svelte';
 	import Badge from '../components/Badge.svelte';
+
+	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+
+	onMount(() => {
+		try {
+			gsap.from('.name', { scale: 0.5, duration: 2 });
+			gsap.to('.name', { color: 'orange', duration: 5 });
+		} catch (error) {
+			console.error('Error in GSAP animation:', error);
+		}
+	});
 
 	const skills = [
 		'React',
@@ -39,24 +54,17 @@
 -->
 
 <div class="flex flex-col min-h-[100dvh]">
-	<header class="px-4 lg:px-6 h-14 flex items-center">
-		<a class="flex items-center justify-center" href="/">
-			Demitri Echols
-			<span class="sr-only">Demitri Echols' Portfolio</span>
-		</a>
-		<nav class="ml-auto flex gap-4 sm:gap-6">
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> About </a>
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> Projects </a>
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> UX Portfolio </a>
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> Skills </a>
-			<a class="text-sm font-medium hover:underline underline-offset-4" href="#"> Contact </a>
-		</nav>
-	</header>
-	<main class="">
-		<section class="w-full py-12 md:py-24 lg:py-32">
-			<div class="grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+	<main class="font-['Josefin_Sans_Variable']">
+		<div
+			class="hero min-h-[80vh]"
+			style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
+		>
+			<div class="hero-overlay bg-opacity-60"></div>
+			<div class="hero-content text-neutral-content text-center">
 				<div class="space-y-4 bg-slate-800 px-4 py-8 rounded-lg">
-					<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+					<h1
+						class="name text-4xl font-bold tracking-wide sm:text-5xl md:text-6xl font-['Rubik_Dirt']"
+					>
 						Demitri Echols
 					</h1>
 					<p
@@ -72,17 +80,8 @@
 						View Projects
 					</a>
 				</div>
-				<div class="flex items-center justify-center">
-					<img
-						src="/placeholder.svg"
-						width="400"
-						height="400"
-						alt="Hero"
-						class="mx-auto aspect-square overflow-hidden rounded-full object-cover"
-					/>
-				</div>
 			</div>
-		</section>
+		</div>
 		<section id="projects" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
 			<div class="grid gap-6 px-4 md:px-6">
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
@@ -95,8 +94,12 @@
 						</p>
 					</div>
 				</div>
-				<div class="">
+				<div class=" flex flex-col gap-24">
 					<ProjectBanner />
+					<ProjectBanner />
+					<ProjectBanner />
+
+					<button class="btn btn-block">All Projects</button>
 				</div>
 			</div>
 		</section>
