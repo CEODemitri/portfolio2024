@@ -1,26 +1,34 @@
 <script>
-	import Carousel from './Carousel.svelte';
+	import Carousel from './Carousel.svelte'; // Import the Carousel component
+
+	export let description = 'A brief description of the project.';
+	export let projectName = 'Project Name';
+	export let viewCodeUrl = '';
+	export let liveViewUrl = '';
+	export let images = [
+		'https://images.unsplash.com/photo-1721297015739-6737bb24089c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D',
+		'https://images.unsplash.com/photo-1721053039240-10d60807d374?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOXx8fGVufDB8fHx8fA%3D%3D',
+		'https://images.unsplash.com/photo-1721419336937-86dc7d479f2c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OHx8fGVufDB8fHx8fA%3D%3D'
+	];
 </script>
 
 <section class="w-full relative overflow-hidden rounded-t-lg">
-	<div class="absolute inset-0 bg-gradient-to-r from-[#5f6caf] to-[#49a09d] opacity-80" />
-	<Carousel class="w-full h-[300px] object-cover object-center"></Carousel>
+	<div class="absolute inset-0 bg-gradient-to-r from-[#5f6caf] to-[#49a09d] opacity-80"></div>
+	<Carousel {images} />
 	<div class="py-4 md:py-8 relative z-10">
 		<div class="max-w-2xl mx-auto text-center space-y-4">
-			<h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">
-				A brief description of the project.
-			</h1>
-			<p class="text-lg md:text-xl">Project Name</p>
+			<h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">{description}</h1>
+			<p class="text-lg md:text-xl">{projectName}</p>
 			<div class="flex items-center justify-center gap-4">
 				<a
-					href="#"
+					href={viewCodeUrl}
 					class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
 					prefetch={false}
 				>
 					View Code
 				</a>
 				<a
-					href="#"
+					href={liveViewUrl}
 					class="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
 					prefetch={false}
 				>
@@ -30,3 +38,7 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	/* Add your section styles here */
+</style>

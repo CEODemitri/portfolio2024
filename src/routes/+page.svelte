@@ -55,7 +55,8 @@
 
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable']">
-		<div class="hero min-h-[80vh]" style="background-image: url(/bg/lg.jpeg);">
+		<!-- style="background-image: url(/bg/lg.jpeg); -->
+		<div class="hero min-h-[80vh]">
 			<div class="hero-overlay bg-opacity-60"></div>
 			<div class="hero-content text-neutral-content text-center">
 				<div class="space-y-4 bg-slate-800/90 px-4 py-8 rounded-lg">
@@ -92,7 +93,17 @@
 					</div>
 				</div>
 				<div class=" flex flex-col gap-24">
-					<ProjectBanner />
+					<ProjectBanner
+						description="A brief description of the project."
+						projectName="Project Name"
+						viewCodeUrl="https://example.com/code"
+						liveViewUrl="https://example.com/live"
+						images={[
+							'https://images.unsplash.com/photo-1721297015739-6737bb24089c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D',
+							'https://images.unsplash.com/photo-1721053039240-10d60807d374?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOXx8fGVufDB8fHx8fA%3D%3D',
+							'https://images.unsplash.com/photo-1721419336937-86dc7d479f2c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OHx8fGVufDB8fHx8fA%3D%3D'
+						]}
+					/>
 					<ProjectBanner />
 					<ProjectBanner />
 
