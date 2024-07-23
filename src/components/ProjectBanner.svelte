@@ -1,10 +1,10 @@
+<script>
+	import Carousel from './Carousel.svelte';
+</script>
+
 <section class="w-full relative overflow-hidden rounded-t-lg">
 	<div class="absolute inset-0 bg-gradient-to-r from-[#5f6caf] to-[#49a09d] opacity-80" />
-	<img
-		src="/placeholder.svg"
-		alt="Project Banner"
-		class="w-full h-[300px] object-cover object-center"
-	/>
+	<Carousel class="w-full h-[300px] object-cover object-center"></Carousel>
 	<div class="py-4 md:py-8 relative z-10">
 		<div class="max-w-2xl mx-auto text-center space-y-4">
 			<h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">
