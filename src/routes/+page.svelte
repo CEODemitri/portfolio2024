@@ -56,7 +56,7 @@
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable']">
 		<!-- style="background-image: url(/bg/lg.jpeg); -->
-		<div class="hero min-h-[80vh]">
+		<div class="hero min-h-[80vh] bg-blue-900/60">
 			<div class="hero-overlay bg-opacity-60"></div>
 			<div class="hero-content text-neutral-content text-center">
 				<div class="space-y-4 bg-slate-800/90 px-4 py-8 rounded-lg">
