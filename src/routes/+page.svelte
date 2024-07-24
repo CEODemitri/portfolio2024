@@ -46,6 +46,39 @@
 		'Ruby',
 		'Python'
 	];
+
+	const shoeShow = {
+		leading: 'Take Back Your Souls',
+		projectName: 'Shoe Show',
+		viewCodeUrl: 'https://github.com/CEODemitri/Shoe-Show-V3',
+		liveViewUrl: 'https://shoe-show-v3.vercel.app/',
+		images: ['/projects/shoe1.png'],
+		descriptionTitle: 'Full Stack Application',
+		description:
+			'Combination of Appwrite and NextJS to create a powerful App for an Up and Coming Brand Name Shoe Enthusiast.'
+	};
+
+	const toCode = {
+		leading: 'A Mind of their Own',
+		projectName: 'To Code',
+		viewCodeUrl: 'https://github.com/CEODemitri/To-Code',
+		liveViewUrl: 'https://to-code.netlify.app/',
+		images: ['/projects/to_code1.png'],
+		descriptionTitle: 'New Age Blog',
+		description:
+			'Learning the Template framework Eleventy on a marvelous ride taught by Kevin Powell.'
+	};
+
+	const burgerBrothers = {
+		leading: 'Restaraunt ',
+		projectName: 'To Code',
+		viewCodeUrl: 'https://github.com/CEODemitri/To-Code',
+		liveViewUrl: 'https://to-code.netlify.app/',
+		images: ['/projects/burger1.png'],
+		descriptionTitle: 'Fresh Food and Service',
+		description:
+			'Eating like we want in this life, why not? Under construction but over excited about completing.'
+	};
 </script>
 
 <!--
@@ -72,8 +105,8 @@
 						applications.
 					</p>
 					<a
-						class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-						href="#"
+						class="inline-flex h-10 items-center justify-center rounded-md bg-teal-600 px-8 text-sm font-medium text-primary-foreground shadow hover:bg-gradient-to-r from-[#5f6caf] to-[#49a09d] duration-600 ease-in-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+						href="#projects"
 					>
 						View Projects
 					</a>
@@ -93,19 +126,9 @@
 					</div>
 				</div>
 				<div class=" flex flex-col gap-24">
-					<ProjectBanner
-						description="A brief description of the project."
-						projectName="Project Name"
-						viewCodeUrl="https://example.com/code"
-						liveViewUrl="https://example.com/live"
-						images={[
-							'https://images.unsplash.com/photo-1721297015739-6737bb24089c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D',
-							'https://images.unsplash.com/photo-1721053039240-10d60807d374?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOXx8fGVufDB8fHx8fA%3D%3D',
-							'https://images.unsplash.com/photo-1721419336937-86dc7d479f2c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OHx8fGVufDB8fHx8fA%3D%3D'
-						]}
-					/>
-					<ProjectBanner />
-					<ProjectBanner />
+					<ProjectBanner {...shoeShow} />
+					<ProjectBanner {...toCode} />
+					<ProjectBanner {...burgerBrothers} />
 
 					<button class="btn btn-block">All Projects</button>
 				</div>
@@ -115,11 +138,13 @@
 			<div class="grid gap-6 px-4 md:px-6">
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
 					<div class="space-y-2">
-						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">UX Portfolio</h2>
+						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+							Check out some of my UX design work.
+						</h2>
 						<p
 							class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 						>
-							Check out some of my UX design work.
+							UX Portfolio
 						</p>
 					</div>
 				</div>
@@ -137,8 +162,8 @@
 								class="mx-auto aspect-video overflow-hidden object-cover"
 							/>
 							<div class="space-y-1 p-4">
-								<h3 class="text-lg font-bold">UX Project 1</h3>
-								<p class="text-muted-foreground">A mobile app design for a fitness tracking app.</p>
+								<h3 class="text-lg font-bold">A mobile app design for a fitness tracking app.</h3>
+								<p class="text-muted-foreground">liteHouse</p>
 							</div>
 						</div>
 					</div>
@@ -155,8 +180,8 @@
 								class="mx-auto aspect-video overflow-hidden object-cover"
 							/>
 							<div class="space-y-1 p-4">
-								<h3 class="text-lg font-bold">UX Project 2</h3>
-								<p class="text-muted-foreground">A website redesign for an e-commerce platform.</p>
+								<h3 class="text-lg font-bold">A website redesign for an e-commerce platform.</h3>
+								<p class="text-muted-foreground">Wholer Foods</p>
 							</div>
 						</div>
 					</div>
@@ -173,10 +198,8 @@
 								class="mx-auto aspect-video overflow-hidden object-cover"
 							/>
 							<div class="space-y-1 p-4">
-								<h3 class="text-lg font-bold">UX Project 3</h3>
-								<p class="text-muted-foreground">
-									A dashboard design for a project management tool.
-								</p>
+								<h3 class="text-lg font-bold">A dashboard design for a project management tool.</h3>
+								<p class="text-muted-foreground">Zen: Dojo Inventory Management System</p>
 							</div>
 						</div>
 					</div>

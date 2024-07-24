@@ -24,7 +24,7 @@
 		<img
 			src={images[currentSlide]}
 			alt="Slide {currentSlide + 1}"
-			class="w-[100%] h-[300px] object-cover object-center"
+			class="w-full h-[300px] object-cover object-center lg:object-top"
 		/>
 		<button
 			on:click={nextSlide}

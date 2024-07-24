@@ -33,15 +33,19 @@
 						<a class="text-sm font-medium hover:underline underline-offset-4" href="/">About</a>
 					</li>
 					<li>
-						<a class="text-sm font-medium hover:underline underline-offset-4" href="/">Projects</a>
+						<a class="text-sm font-medium hover:underline underline-offset-4" href="#projects"
+							>Projects</a
+						>
 					</li>
 					<li>
-						<a class="text-sm font-medium hover:underline underline-offset-4" href="/"
+						<a class="text-sm font-medium hover:underline underline-offset-4" href="#ux-portfolio"
 							>UX/UI Portfolio</a
 						>
 					</li>
 					<li>
-						<a class="text-sm font-medium hover:underline underline-offset-4" href="/">Skills</a>
+						<a class="text-sm font-medium hover:underline underline-offset-4" href="#skills"
+							>Skills</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -55,15 +59,17 @@
 				<a class="text-sm font-medium hover:underline underline-offset-4" href="/">About</a>
 			</li>
 			<li>
-				<a class="text-sm font-medium hover:underline underline-offset-4" href="/">Projects</a>
+				<a class="text-sm font-medium hover:underline underline-offset-4" href="#projects"
+					>Projects</a
+				>
 			</li>
 			<li>
-				<a class="text-sm font-medium hover:underline underline-offset-4" href="/"
+				<a class="text-sm font-medium hover:underline underline-offset-4" href="#ux-portfolio"
 					>UX/UI Portfolio</a
 				>
 			</li>
 			<li>
-				<a class="text-sm font-medium hover:underline underline-offset-4" href="/">Skills</a>
+				<a class="text-sm font-medium hover:underline underline-offset-4" href="#skills">Skills</a>
 			</li>
 		</ul>
 	</div>
