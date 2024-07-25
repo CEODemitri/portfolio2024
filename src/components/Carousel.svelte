@@ -13,7 +13,7 @@
 	};
 </script>
 
-<div class="carousel relative">
+<div class="carousel relative w-full">
 	{#if images.length > 0}
 		<button
 			on:click={prevSlide}
@@ -24,7 +24,7 @@
 		<img
 			src={images[currentSlide]}
 			alt="Slide {currentSlide + 1}"
-			class="w-full h-[300px] object-cover object-center lg:object-top"
+			class="w-full h-[300px] object-cover lg:object-top"
 		/>
 		<button
 			on:click={nextSlide}
