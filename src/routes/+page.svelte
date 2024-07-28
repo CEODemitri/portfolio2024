@@ -73,7 +73,7 @@
 		leading: 'Restaraunt ',
 		projectName: 'To Code',
 		viewCodeUrl: 'https://github.com/CEODemitri/To-Code',
-		liveViewUrl: 'https://to-code.netlify.app/',
+		liveViewUrl: 'https://burger-brothers.vercel.app/',
 		images: ['/projects/burger1.png'],
 		descriptionTitle: 'Fresh Food and Service',
 		description:
