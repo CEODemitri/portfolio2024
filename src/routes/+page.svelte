@@ -88,7 +88,6 @@
 
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable']">
-		<!-- style="background-image: url(/bg/lg.jpeg); -->
 		<div class="hero min-h-[80vh] bg-blue-900/60" style="background-image: url(/bg/lgBG.jpg);">
 			<div class="hero-overlay bg-opacity-60"></div>
 			<div class="hero-content text-neutral-content text-center">
@@ -98,19 +97,26 @@
 					>
 						Creative Designer & <span class="font-bold">Developer</span>
 					</h1>
-					<section class="flex flex-col justify-items-end">
+					<section class="flex flex-col justify-items-end w-1/2">
 						<p
-							class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+							class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-start"
 						>
 							Ich HeiBe Demitri Echols. My passions are Coding, Learning and Creating Beautiful
 							Products.
 						</p>
-						<a
-							class="inline-flex h-10 items-center justify-center rounded-md bg-teal-600 px-8 text-sm font-medium text-primary-foreground shadow hover:bg-gradient-to-r from-[#5f6caf] to-[#49a09d] duration-600 ease-in-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-							href="#projects"
-						>
-							View Projects
-						</a>
+						<section class="flex justify-between py-4 px-16">
+							<a
+								href="/"
+								class="inline-flex h-10 items-center justify-center rounded-md bg-teal-600 px-8 text-sm font-medium text-primary-foreground shadow hover:bg-gradient-to-r from-[#5f6caf] to-[#49a09d] duration-600 ease-in-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-2/5"
+								>Resume</a
+							>
+							<a
+								class="inline-flex h-10 items-center justify-center rounded-md bg-teal-600 px-8 text-sm font-medium text-primary-foreground shadow hover:bg-gradient-to-r from-[#5f6caf] to-[#49a09d] duration-600 ease-in-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-2/5"
+								href="#projects"
+							>
+								View Projects
+							</a>
+						</section>
 					</section>
 				</div>
 			</div>
