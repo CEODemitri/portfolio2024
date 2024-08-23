@@ -3,6 +3,7 @@
 	<div class="drawer-content flex flex-col">
 		<!-- Navbar -->
 		<div class="navbar bg-base-300 w-full">
+			<!-- hamburger icon -->
 			<div class="flex-none lg:hidden">
 				<label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
 					<svg
@@ -20,37 +21,47 @@
 					</svg>
 				</label>
 			</div>
-			<div class="mx-2 flex-1 px-2">
+			<div class="mx-2 px-2">
 				<a class="flex items-center justify-center" href="/">
 					Demitri Echols
 					<span class="sr-only">Demitri Echols' Portfolio</span>
 				</a>
 			</div>
-			<div class="hidden flex-none lg:block">
-				<ul class="menu menu-horizontal">
+			<div class="hidden flex-none lg:block ml-20 bg-black/80 rounded-3xl">
+				<ul
+					class="menu menu-horizontal flex justify-content items-center uppercase text-xs font-medium"
+				>
 					<!-- Navbar menu content here -->
 					<li>
-						<a class="text-sm font-medium hover:underline underline-offset-4" href="/">About</a>
+						<a class="hover:underline underline-offset-4" href="/">About</a>
 					</li>
 					<li>
-						<a class="text-sm font-medium hover:underline underline-offset-4" href="#projects"
-							>Projects</a
-						>
+						<a class="hover:underline underline-offset-4" href="#projects">Projects</a>
 					</li>
 					<li>
-						<a class="text-sm font-medium hover:underline underline-offset-4" href="#ux-portfolio"
-							>UX/UI Portfolio</a
-						>
+						<a class="hover:underline underline-offset-4" href="#ux-portfolio">UX/UI Portfolio</a>
 					</li>
 					<li>
-						<a class="text-sm font-medium hover:underline underline-offset-4" href="#skills"
-							>Skills</a
-						>
+						<a class="hover:underline underline-offset-4" href="#skills">Skills</a>
+					</li>
+					<div class="text-4xl">|</div>
+
+					<li>
+						<a class="hover:underline underline-offset-4" href="#contact">Behance</a>
+					</li>
+					<li>
+						<a class="hover:underline underline-offset-4" href="#contact">Github</a>
+					</li>
+
+					<li>
+						<a class="hover:underline underline-offset-4" href="#contact">Codepen</a>
 					</li>
 				</ul>
 			</div>
 
-			<button>Menu</button>
+			<div class="ml-auto justify-self-center hidden lg:block">
+				<button>Menu</button>
+			</div>
 		</div>
 	</div>
 

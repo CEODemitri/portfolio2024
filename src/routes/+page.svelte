@@ -98,7 +98,7 @@
 					>
 						Creative Designer & <span class="font-bold">Developer</span>
 					</h1>
-					<section class="flex flex-col w-96 justify-items-end">
+					<section class="flex flex-col justify-items-end">
 						<p
 							class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 						>
