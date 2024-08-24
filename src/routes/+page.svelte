@@ -142,7 +142,7 @@
 				</section>
 			</article>
 
-			<div class="flex w-[200px] h-[200px] justify-center items-center relative">
+			<!-- <div class="flex w-[200px] h-[200px] justify-center items-center relative">
 				<div
 					class="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-full absolute"
 				></div>
@@ -152,7 +152,7 @@
 				<div
 					class="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute rotate-180"
 				></div>
-			</div>
+			</div> -->
 		</div>
 
 		<section id="projects" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
