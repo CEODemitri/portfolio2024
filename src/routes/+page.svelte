@@ -101,7 +101,7 @@
 	<main class="font-['Josefin_Sans_Variable'] text-white">
 		<!-- hero section -->
 		<div
-			class="h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-4 p-4"
+			class="flex flex-col md:h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-4 p-4"
 			style="background-image: url('./bg/lgBG.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"
 		>
 			<p class="absolute text-xs text-slate-400/80">Web Portfolio: Demitri Echols</p>
@@ -138,7 +138,9 @@
 				</p>
 				<section class="w-2/5 md:place-self-end flex justify-around">
 					<a href="/">Resume</a>
-					<button class="name bg-gradient-to-r"><a href="/">Projects</a></button>
+					<button class="name bg-gradient-to-r from-grey-400 to grey-900"
+						><a href="/">Projects</a></button
+					>
 				</section>
 			</article>
 			<article class="col-start-2 row-start-9 col-span-3 row-span-3">
@@ -159,13 +161,15 @@
 			</article>
 
 			<article class="col-start-9 col-span-3 bg-black/30 row-start-11 row-span-1 rounded-md">
-				<section>
+				<section class="flex flex-col md:flex-row justify-around items-center text-4xl">
 					<Github />
 					<Blitz />
 					<Dribbble />
 				</section>
 			</article>
-			<p class="absolute top-[80vh] left-[90vw] text-slate-200 text-xs">updated 24.8.24</p>
+			<p class="absolute top-[1010px] md:top-[80vh] md:left-[90vw] text-slate-200 text-xs">
+				updated 24.8.24
+			</p>
 		</div>
 
 		<section id="projects" class="w-full py-12 md:py-24 lg:py-32 mt-24 bg-muted">
