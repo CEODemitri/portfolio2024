@@ -88,9 +88,14 @@
 
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable']">
-		<div class="hero min-h-[80vh] bg-blue-900/60" style="background-image: url(/bg/lgBG.jpg);">
+		<div
+			class="min-h-[80vh] bg-blue-900/60 grid grid-cols-12 grid-rows-12"
+			style="background-image: url(/bg/lgBG.jpg);"
+		>
 			<div class="hero-overlay bg-opacity-60"></div>
-			<div class="hero-content text-neutral-content text-center">
+			<div
+				class="hero-content text-neutral-content text-center col-span-10 col-start-6 row-start-4"
+			>
 				<div class="space-y-4 bg-black/25 px-4 py-8 rounded-lg flex flex-col">
 					<h1
 						class="name font-extralight text-4xl tracking-wide sm:text-5xl md:text-6xl font-['Livvic']"
