@@ -17,9 +17,13 @@
 	import '@fontsource/livvic';
 	import ProjectBanner from '../components/ProjectBanner.svelte';
 	import Badge from '../components/Badge.svelte';
+	import Github from '../components/icons/Github.svelte';
+	import Arrow from '../components/icons/Arrow.svelte';
+	import Dribbble from '../components/icons/Dribbble.svelte';
 
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	import Blitz from '../components/icons/Blitz.svelte';
 
 	onMount(() => {
 		try {
@@ -94,41 +98,53 @@
 -->
 
 <div class="flex flex-col min-h-[100dvh]">
-	<main class="font-['Josefin_Sans_Variable']">
+	<main class="font-['Josefin_Sans_Variable'] text-white">
 		<!-- hero section -->
 		<div
-			class="h-[80vh] grid grid-cols-12 grid-rows-12 gap-4 p-4"
+			class="h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-4 p-4"
 			style="background-image: url('./bg/lgBG.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"
 		>
-			<p class="absolute text-xs">Web Portfolio: Demitri Echols</p>
+			<p class="absolute text-xs text-slate-400/80">Web Portfolio: Demitri Echols</p>
 			<article
-				class="col-start-2 col-span-3 row-start-5 row-span-3 bg-black/10 backdrop-blur-sm rounded-lg"
+				class="hidden md:block col-start-2 col-span-3 row-start-5 row-span-3 bg-black/10 backdrop-blur-sm rounded-lg"
 			>
 				{#each jobs as job}
 					<ul>
-						<li class="p-3 text-lg text-slate-400">{job}</li>
+						<li class="p-3 text-lg text-slate-400 hover:text-white hover:animate-bounce">{job}</li>
 					</ul>
 				{/each}
 			</article>
 			<article
-				class="col-start-5 col-span-7 row-start-4 row-span-3 bg-black/30 p-4 flex flex-col justify-between rounded-xl backdrop-blur-sm"
+				class="mt-80 md:mt-0 col-start-5 col-span-7 row-start-4 row-span-3 bg-black/30 p-4 flex flex-col justify-between items-center rounded-xl backdrop-blur-sm"
 			>
-				<h1 class="text-5xl">Creative Designer & <span>Developer</span></h1>
-				<p class="w-2/5 place-self-end">
-					Ich HeiBe Demitri Echols. My passions are Coding, Learning and Creating Beautiful
+				<!-- <div class="flex w-[200px] h-[200px] justify-center items-center relative">
+					<div
+						class="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-xl absolute"
+					></div>
+					<div
+						class="w-[108%] h-[108%] shadow-lg shadow-violet-500 bg-transparent rounded-full absolute rotate-90"
+					></div>
+					<div
+						class="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute rotate-180"
+					></div>
+				</div> -->
+
+				<h1 class="text-5xl font-extralight text-center tracking-wider">
+					Creative Designer & <span class="font-bold">Developer</span>
+				</h1>
+				<p class="w-2/5 md:place-self-end">
+					Ich heiBe Demitri Echols. My passions are Coding, Learning and Creating Beautiful
 					Products.
 				</p>
-				<section class="w-2/5 place-self-end flex justify-around">
+				<section class="w-2/5 md:place-self-end flex justify-around">
 					<a href="/">Resume</a>
-					<button class="name bg-from"><a href="/">Projects</a></button>
+					<button class="name bg-gradient-to-r"><a href="/">Projects</a></button>
 				</section>
 			</article>
-			<article class="col-start-2 row-start-10 col-span-3 row-span-3">
+			<article class="col-start-2 row-start-9 col-span-3 row-span-3">
 				<section class="flex justify-between">
 					<h2 class="text-2xl">Meine Work</h2>
-					<button class="animate-bounce"
-						><a href="#projects">All Work <span>(icon)</span></a></button
-					>
+					<button class="animate-bounce"><a href="#projects">All Work <Arrow /></a></button>
 				</section>
 				<section class="bg-purple-800/50 backdrop-blur-sm py-12 rounded-xl">
 					{#each projectCounts as projectCount}
@@ -142,31 +158,37 @@
 				</section>
 			</article>
 
-			<!-- <div class="flex w-[200px] h-[200px] justify-center items-center relative">
-				<div
-					class="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-full absolute"
-				></div>
-				<div
-					class="w-[108%] h-[108%] shadow-lg shadow-violet-500 bg-transparent rounded-full absolute rotate-90"
-				></div>
-				<div
-					class="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute rotate-180"
-				></div>
-			</div> -->
+			<article class="col-start-9 col-span-3 bg-black/30 row-start-11 row-span-1 rounded-md">
+				<section>
+					<Github />
+					<Blitz />
+					<Dribbble />
+				</section>
+			</article>
+			<p class="absolute top-[80vh] left-[90vw] text-slate-200 text-xs">updated 24.8.24</p>
 		</div>
 
-		<section id="projects" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
-			<div class="grid gap-6 px-4 md:px-6">
-				<div class="flex flex-col items-center justify-center space-y-4 text-center">
-					<div class="space-y-2">
-						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
-						<p
-							class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-						>
-							Check out some of my recent web applications.
-						</p>
+		<section id="projects" class="w-full py-12 md:py-24 lg:py-32 mt-24 bg-muted">
+			<div class="gap-6 px-4 md:px-6">
+				<section class="flex">
+					<p>Featured Projects</p>
+					<div class="flex flex-col space-y-4 w-3/5 text-right ml-auto">
+						<div class="space-y-2">
+							<h2 class="text-3xl font-extralight tracking-tighter sm:text-5xl">
+								<span class="font-bold">Crafting</span> Seamless Digital Experiences with Design and
+								Development
+							</h2>
+							<p
+								class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+							>
+								Check out some of my recent web applications.
+							</p>
+						</div>
 					</div>
-				</div>
+				</section>
+				<section class="flex justify-end my-8">
+					<button class=""><a href="#projects">All Work <Arrow /></a></button>
+				</section>
 				<div class=" flex flex-col gap-24">
 					<ProjectBanner {...shoeShow} />
 					<ProjectBanner {...toCode} />

@@ -4,7 +4,9 @@
 	import Navigation from '../components/Navigation.svelte';
 </script>
 
-<Navigation />
-<slot></slot>
+<div class="bg-black">
+	<Navigation />
+	<slot></slot>
+</div>
 
 <Footer />
