@@ -79,6 +79,13 @@
 		description:
 			'Eating like we want in this life, why not? Under construction but over excited about completing.'
 	};
+
+	const jobs = ['UX/UI Design', 'Full Stack Cloud Development', 'Web Developer', 'Artist'];
+
+	const projectCounts = [
+		{ id: 3, name: 'UX Projects' },
+		{ id: 4, name: 'Web Projects' }
+	];
 </script>
 
 <!--
@@ -88,44 +95,66 @@
 
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable']">
+		<!-- hero section -->
 		<div
-			class="min-h-[80vh] bg-blue-900/60 grid grid-cols-12 grid-rows-12"
-			style="background-image: url(/bg/lgBG.jpg);"
+			class="h-[80vh] grid grid-cols-12 grid-rows-12 gap-4 p-4"
+			style="background-image: url('./bg/lgBG.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"
 		>
-			<div class="hero-overlay bg-opacity-60"></div>
-			<div
-				class="hero-content text-neutral-content text-center col-span-10 col-start-6 row-start-4"
+			<p class="absolute text-xs">Web Portfolio: Demitri Echols</p>
+			<article
+				class="col-start-2 col-span-3 row-start-5 row-span-3 bg-black/10 backdrop-blur-sm rounded-lg"
 			>
-				<div class="space-y-4 bg-black/25 px-4 py-8 rounded-lg flex flex-col">
-					<h1
-						class="name font-extralight text-4xl tracking-wide sm:text-5xl md:text-6xl font-['Livvic']"
+				{#each jobs as job}
+					<ul>
+						<li class="p-3 text-lg text-slate-400">{job}</li>
+					</ul>
+				{/each}
+			</article>
+			<article
+				class="col-start-5 col-span-7 row-start-4 row-span-3 bg-black/30 p-4 flex flex-col justify-between rounded-xl backdrop-blur-sm"
+			>
+				<h1 class="text-5xl">Creative Designer & <span>Developer</span></h1>
+				<p class="w-2/5 place-self-end">
+					Ich HeiBe Demitri Echols. My passions are Coding, Learning and Creating Beautiful
+					Products.
+				</p>
+				<section class="w-2/5 place-self-end flex justify-around">
+					<a href="/">Resume</a>
+					<button class="name bg-from"><a href="/">Projects</a></button>
+				</section>
+			</article>
+			<article class="col-start-2 row-start-10 col-span-3 row-span-3">
+				<section class="flex justify-between">
+					<h2 class="text-2xl">Meine Work</h2>
+					<button class="animate-bounce"
+						><a href="#projects">All Work <span>(icon)</span></a></button
 					>
-						Creative Designer & <span class="font-bold">Developer</span>
-					</h1>
-					<section class="flex flex-col justify-items-end w-1/2">
-						<p
-							class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-start"
-						>
-							Ich HeiBe Demitri Echols. My passions are Coding, Learning and Creating Beautiful
-							Products.
-						</p>
-						<section class="flex justify-between py-4 px-16">
-							<a
-								href="/"
-								class="inline-flex h-10 items-center justify-center rounded-md bg-teal-600 px-8 text-sm font-medium text-primary-foreground shadow hover:bg-gradient-to-r from-[#5f6caf] to-[#49a09d] duration-600 ease-in-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-2/5"
-								>Resume</a
-							>
-							<a
-								class="inline-flex h-10 items-center justify-center rounded-md bg-teal-600 px-8 text-sm font-medium text-primary-foreground shadow hover:bg-gradient-to-r from-[#5f6caf] to-[#49a09d] duration-600 ease-in-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-2/5"
-								href="#projects"
-							>
-								View Projects
-							</a>
-						</section>
-					</section>
-				</div>
+				</section>
+				<section class="bg-purple-800/50 backdrop-blur-sm py-12 rounded-xl">
+					{#each projectCounts as projectCount}
+						<ul>
+							<li class="flex justify-around mb-4">
+								<p>{projectCount.id}</p>
+								<p>{projectCount.name}</p>
+							</li>
+						</ul>
+					{/each}
+				</section>
+			</article>
+
+			<div class="flex w-[200px] h-[200px] justify-center items-center relative">
+				<div
+					class="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-full absolute"
+				></div>
+				<div
+					class="w-[108%] h-[108%] shadow-lg shadow-violet-500 bg-transparent rounded-full absolute rotate-90"
+				></div>
+				<div
+					class="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute rotate-180"
+				></div>
 			</div>
 		</div>
+
 		<section id="projects" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
 			<div class="grid gap-6 px-4 md:px-6">
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
