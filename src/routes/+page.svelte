@@ -115,7 +115,7 @@
 				{/each}
 			</article>
 			<article
-				class="mt-80 md:mt-0 col-start-5 col-span-7 row-start-4 row-span-3 bg-black/30 p-4 flex flex-col justify-between items-center rounded-xl backdrop-blur-sm"
+				class="mt-48 md:mt-0 col-start-5 col-span-7 row-start-4 row-span-3 bg-black/30 p-4 flex flex-col justify-between items-center rounded-xl backdrop-blur-sm"
 			>
 				<!-- <div class="flex w-[200px] h-[200px] justify-center items-center relative">
 					<div
