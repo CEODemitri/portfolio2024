@@ -13,7 +13,9 @@
 	};
 </script>
 
-<div class="carousel relative w-full">
+<div class="carousel relative w-full rounded-b-20">
+	<!-- make overlay -->
+	<div class="bg-[#2D3036]"></div>
 	{#if images.length > 0}
 		<button
 			on:click={prevSlide}
@@ -24,7 +26,7 @@
 		<img
 			src={images[currentSlide]}
 			alt="Slide {currentSlide + 1}"
-			class="w-full h-[300px] object-cover lg:object-top"
+			class="w-full h-[175px] lg:h-[525px] object-cover lg:object-top"
 		/>
 		<button
 			on:click={nextSlide}
@@ -38,12 +40,6 @@
 </div>
 
 <style>
-	/* Add your carousel styles here */
-	.carousel {
-		position: relative;
-		overflow: hidden;
-	}
-
 	.carousel img {
 		transition: transform 0.5s ease;
 	}
