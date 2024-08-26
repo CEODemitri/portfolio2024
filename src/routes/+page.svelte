@@ -104,6 +104,7 @@
 			class="flex flex-col md:h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-4 p-4"
 			style="background-image: url('./bg/lgBG.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"
 		>
+			<div class="relative bg-[url('./bg/lgCloud.png')] w-full"></div>
 			<p class="absolute text-xs text-slate-400/80">Web Portfolio: Demitri Echols</p>
 			<article
 				class="hidden md:block col-start-2 col-span-3 row-start-5 row-span-3 bg-black/10 backdrop-blur-sm rounded-lg"
