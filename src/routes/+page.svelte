@@ -100,23 +100,26 @@
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable'] text-white">
 		<!-- hero section -->
-		<div
-			class="flex flex-col md:h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-4 p-4"
-			style="background-image: url('./bg/lgBG.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"
-		>
-			<div class="relative bg-[url('./bg/lgCloud.png')] w-full"></div>
+		<div class="flex flex-col md:h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-4 p-4 bg-center">
+			<!-- cloud -->
+			<!-- <div class="relative bg-[url('./bg/lgCloud.png')] bg-cover"></div> -->
 			<p class="absolute text-xs text-slate-400/80">Web Portfolio: Demitri Echols</p>
 			<article
-				class="hidden md:block col-start-2 col-span-3 row-start-5 row-span-3 bg-black/10 backdrop-blur-sm rounded-lg"
+				class="hidden md:block col-start-2 col-span-3 row-start-5 row-span-3 bg-gray-200/5 rounded-lg"
 			>
 				{#each jobs as job}
 					<ul>
-						<li class="p-3 text-lg text-slate-400 hover:text-white hover:animate-bounce">{job}</li>
+						<li class="p-2 text-lg text-slate-600 hover:text-white hover:animate-bounce">{job}</li>
 					</ul>
 				{/each}
 			</article>
+
+			<article>
+				<img src="/smBg.png" alt="" class="col-start-4 col-span-3 row-start-1 row-span-6" />
+			</article>
+
 			<article
-				class="mt-48 md:mt-0 col-start-5 col-span-7 row-start-4 row-span-3 bg-black/30 p-4 flex flex-col justify-between items-center rounded-xl backdrop-blur-sm"
+				class="mt-48 md:mt-0 col-start-8 col-span-5 row-start-4 row-span-6 bg-black/30 p-4 flex flex-col-reverse justify-between items-center rounded-xl backdrop-blur-sm"
 			>
 				<!-- <div class="flex w-[200px] h-[200px] justify-center items-center relative">
 					<div
@@ -130,19 +133,13 @@
 					></div>
 				</div> -->
 
-				<h1 class="text-5xl font-extralight text-center tracking-wider">
+				<h1 class="text-7xl font-extralight text-right tracking-wider">
 					Creative Designer & <span class="font-bold">Developer</span>
 				</h1>
-				<p class="w-2/5 md:place-self-end">
+				<p class="w-4/5 md:place-self-end tracking-widest">
 					Ich heiBe Demitri Echols. My passions are Coding, Learning and Creating Beautiful
 					Products.
 				</p>
-				<section class="w-2/5 md:place-self-end flex justify-around">
-					<a href="/">Resume</a>
-					<button class="name bg-gradient-to-r from-grey-400 to grey-900"
-						><a href="/">Projects</a></button
-					>
-				</section>
 			</article>
 			<article class="col-start-2 row-start-9 col-span-3 row-span-3">
 				<section class="flex justify-between">
