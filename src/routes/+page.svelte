@@ -114,8 +114,9 @@
 				{/each}
 			</article>
 
-			<article>
-				<img src="/smBg.png" alt="" class="col-start-4 col-span-3 row-start-1 row-span-6" />
+			<article class="col-start-6 col-span-2 row-start-2 row-span-6">
+				<img src="/freefloat1.png" alt="" class="absolute left-80" />
+				<img src="/smBg.png" alt="" />
 			</article>
 
 			<article
