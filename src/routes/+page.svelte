@@ -74,8 +74,8 @@
 	};
 
 	const burgerBrothers = {
-		leading: 'Restaraunt ',
-		projectName: 'To Code',
+		leading: 'Restaraunt Website',
+		projectName: 'Burger Brothers',
 		viewCodeUrl: 'https://github.com/CEODemitri/To-Code',
 		liveViewUrl: 'https://burger-brothers.vercel.app/',
 		images: ['/projects/burger1.png'],
@@ -114,9 +114,9 @@
 				{/each}
 			</article>
 
-			<article class="col-start-6 col-span-2 row-start-2 row-span-6">
-				<img src="/freefloat1.png" alt="" class="absolute left-80" />
-				<img src="/smBg.png" alt="" />
+			<article class="col-start-6 col-span-2 row-start-2 row-span-6 hidden md:flex">
+				<img src="/freefloat1.png" alt="" class="md:absolute left-80" />
+				<img src="/smBg.png" alt="" class="w-40" />
 			</article>
 
 			<article
@@ -147,7 +147,9 @@
 					<h2 class="text-2xl">Meine Work</h2>
 					<button class="animate-bounce"><a href="#projects">All Work <Arrow /></a></button>
 				</section>
-				<section class="bg-purple-800/50 backdrop-blur-sm py-12 rounded-xl">
+				<section
+					class="bg-gradient-to-br from-slate-700 to-purple-800/50 backdrop-blur-sm py-12 rounded-xl"
+				>
 					{#each projectCounts as projectCount}
 						<ul>
 							<li class="flex justify-around mb-4">
@@ -160,14 +162,14 @@
 			</article>
 
 			<article class="col-start-9 col-span-3 bg-black/30 row-start-11 row-span-1 rounded-md">
-				<section class="flex flex-col md:flex-row justify-around items-center text-4xl">
+				<section class="flex flex-col md:flex-row justify-around items-center text-4xl gap-6">
 					<Github />
 					<Blitz />
 					<Dribbble />
 				</section>
 			</article>
 			<p class="absolute top-[1010px] md:top-[80vh] md:left-[90vw] text-slate-200 text-xs">
-				updated 24.8.24
+				updated 24.9.18
 			</p>
 		</div>
 
@@ -298,7 +300,7 @@
 			<div class="grid gap-6 px-4 md:px-6">
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
 					<div class="space-y-2">
-						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Get in Touch</h2>
+						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Let's Build Together</h2>
 						<p
 							class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 						>
@@ -322,7 +324,7 @@
 						placeholder="Message"
 					></textarea>
 					<button
-						class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+						class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-gradient-to-tl from-slate-700 to-purple-800/50 transition-colors hover:duration-700 hover:ease-in-out h-10 px-4 py-2 w-full"
 						type="submit"
 					>
 						Submit

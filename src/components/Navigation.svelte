@@ -80,9 +80,9 @@
 					/>
 				</svg> -->
 				<button
-					class="ml-auto justify-self-center hidden lg:block px-6 text-lg uppercase bg-gradient-to-br from-slate-700 to-slate-300 rounded-md text-slate-700 mr-8"
+					class="ml-auto justify-self-center hidden lg:block px-6 text-lg uppercase bg-gradient-to-br from-slate-700 to-purple-800/50 rounded-md text-slate-300 mr-8"
 				>
-					Menu</button
+					Resume</button
 				>
 			</div>
 		</div>

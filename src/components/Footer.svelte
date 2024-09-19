@@ -1,7 +1,7 @@
 <footer
-	class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t"
+	class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 text-slate-200 bg-gradient-to-tl from-slate-700 to-purple-800/50"
 >
-	<p class="text-xs text-muted-foreground">© 2024 Demitri Echols. All rights reserved.</p>
+	<p class="text-xs">© 2024 Demitri Echols. All rights reserved.</p>
 	<nav class="sm:ml-auto flex gap-4 sm:gap-6">
 		<a class="text-xs hover:underline underline-offset-4" href="https://github.com/CEODemitri">
 			<svg
@@ -67,3 +67,9 @@
 		</a>
 	</nav>
 </footer>
+
+<style>
+	a {
+		display: flex;
+	}
+</style>
