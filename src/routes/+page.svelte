@@ -63,7 +63,7 @@
 	};
 
 	const toCode = {
-		leading: 'A Mind of their Own',
+		leading: 'A Mind of our Own',
 		projectName: 'To Code',
 		viewCodeUrl: 'https://github.com/CEODemitri/To-Code',
 		liveViewUrl: 'https://to-code.netlify.app/',
@@ -100,7 +100,7 @@
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable'] text-white">
 		<!-- hero section -->
-		<div class="flex flex-col md:h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-4 p-4 bg-center">
+		<div class="flex flex-col md:h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-8 p-4 bg-center">
 			<!-- cloud -->
 			<!-- <div class="relative bg-[url('./bg/lgCloud.png')] bg-cover"></div> -->
 			<p class="absolute text-xs text-slate-400/80">Web Portfolio: Demitri Echols</p>
@@ -120,7 +120,7 @@
 			</article>
 
 			<article
-				class="mt-48 md:mt-0 col-start-8 col-span-5 row-start-4 row-span-6 bg-black/30 p-4 flex flex-col-reverse justify-between items-center rounded-xl backdrop-blur-sm"
+				class="mt-48 md:mt-0 col-start-8 col-span-5 row-start-4 row-span-6 bg-black/30 p-4 flex flex-col gap-6 md:flex-col-reverse justify-between items-end md:items-center rounded-xl backdrop-blur-sm"
 			>
 				<!-- <div class="flex w-[200px] h-[200px] justify-center items-center relative">
 					<div
@@ -168,7 +168,7 @@
 					<Dribbble />
 				</section>
 			</article>
-			<p class="absolute top-[1010px] md:top-[80vh] md:left-[90vw] text-slate-200 text-xs">
+			<p class="absolute top-[1060px] md:top-[80vh] md:left-[90vw] text-slate-200 text-xs">
 				updated 24.9.18
 			</p>
 		</div>
@@ -324,7 +324,7 @@
 						placeholder="Message"
 					></textarea>
 					<button
-						class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-gradient-to-tl from-slate-700 to-purple-800/50 transition-colors hover:duration-700 hover:ease-in-out h-10 px-4 py-2 w-full"
+						class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-orange-600/60 text-primary-foreground hover:bg-gradient-to-tl from-slate-700 to-purple-800/50 transition-colors hover:duration-700 hover:ease-in-out h-10 px-4 py-2 w-full"
 						type="submit"
 					>
 						Submit
