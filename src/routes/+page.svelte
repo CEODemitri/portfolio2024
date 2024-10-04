@@ -145,7 +145,7 @@
 			<article class="col-start-2 row-start-9 col-span-3 row-span-3">
 				<section class="flex justify-between">
 					<h2 class="text-2xl">Meine Work</h2>
-					<button class="animate-bounce"><a href="#projects">All Work <Arrow /></a></button>
+					<button class="animate-bounce"><a href="./Projects">All Work <Arrow /></a></button>
 				</section>
 				<section
 					class="bg-gradient-to-br from-slate-700 to-purple-800/50 backdrop-blur-sm py-12 rounded-xl"
