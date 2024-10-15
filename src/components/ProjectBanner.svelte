@@ -18,7 +18,7 @@
 <section class="w-full relative overflow-hidden">
 	<!-- #282433 -->
 	<div
-		class="absolute inset-0 bg-gradient-to-tl from-orange-300/35 to-purple-800/50 rounded-bl-lg"
+		class="absolute inset-0 bg-gradient-to-tl from-orange-300/55 to-blue-800 rounded-bl-lg"
 	></div>
 	<Carousel {images} />
 	<div class="py-2 md:py-4 relative z-10 text-white/80">
@@ -27,10 +27,10 @@
 				<h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">{leading}</h1>
 				<p class="text-lg md:text-xl">{projectName}</p>
 			</div>
-			<div class="flex items-center justify-center gap-4 bg-purple-400/20 p-2 rounded-full">
+			<div class="flex items-center justify-center gap-4 bg-orange-300/10 p-2 rounded-lg">
 				<a
 					href={viewCodeUrl}
-					class="inline-flex h-9 items-center justify-center px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors rounded-full"
+					class="inline-flex h-9 items-center justify-center px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors rounded-md"
 					prefetch={false}
 				>
 					View Code

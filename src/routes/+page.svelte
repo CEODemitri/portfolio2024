@@ -203,7 +203,8 @@
 				</div>
 			</div>
 		</section>
-		<section id="ux-portfolio" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+		<!-- uncomment when complete -->
+		<!-- <section id="ux-portfolio" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
 			<div class="grid gap-6 px-4 md:px-6">
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
 					<div class="space-y-2">
@@ -274,7 +275,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section id="skills" class="w-full py-12 md:py-24 lg:py-32 bg-slate-800">
 			<div class="grid gap-6 px-4 md:px-6">
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
