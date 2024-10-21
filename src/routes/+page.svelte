@@ -52,7 +52,7 @@
 	];
 
 	const shoeShow = {
-		leading: 'Take Back Your Souls',
+		leading: 'Portfolio & Blog',
 		projectName: 'Shoe Show',
 		viewCodeUrl: 'https://github.com/CEODemitri/Shoe-Show-V3',
 		liveViewUrl: 'https://shoe-show-v3.vercel.app/',
@@ -63,7 +63,7 @@
 	};
 
 	const toCode = {
-		leading: 'A Mind of our Own',
+		leading: 'Author Time',
 		projectName: 'To Code',
 		viewCodeUrl: 'https://github.com/CEODemitri/To-Code',
 		liveViewUrl: 'https://to-code.netlify.app/',
@@ -74,7 +74,7 @@
 	};
 
 	const burgerBrothers = {
-		leading: 'Restaraunt Website',
+		leading: 'E-Commerce',
 		projectName: 'Burger Brothers',
 		viewCodeUrl: 'https://github.com/CEODemitri/To-Code',
 		liveViewUrl: 'https://burger-brothers.vercel.app/',
@@ -199,7 +199,7 @@
 					<ProjectBanner {...toCode} />
 					<ProjectBanner {...burgerBrothers} />
 
-					<button class="btn btn-block">All Projects</button>
+					<button class="btn btn-block">More Projects</button>
 				</div>
 			</div>
 		</section>

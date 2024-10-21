@@ -15,10 +15,10 @@
 		'Our platform offers a wide range of powerful features to help you streamline your workflow and boost productivity.';
 </script>
 
-<section class="w-full relative overflow-hidden">
+<section class="w-full relative overflow-hidden rounded-tl-xl">
 	<!-- #282433 -->
 	<div
-		class="absolute inset-0 bg-gradient-to-tl from-orange-300/55 to-blue-800 rounded-bl-lg"
+		class="absolute inset-0 bg-gradient-to-tl from-orange-300/55 to-blue-800 rounded-bl-xl"
 	></div>
 	<Carousel {images} />
 	<div class="py-2 md:py-4 relative z-10 text-white/80">
