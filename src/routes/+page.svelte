@@ -144,7 +144,7 @@
 					Creative Designer & <span class="font-bold">Developer</span>
 				</h1>
 				<p class="w-4/5 md:place-self-end tracking-widest">
-					Ich heiBe Demitri Echols. My passions are Coding, Learning and Creating Beautiful
+					Ich heiBe Demitri Echols. On a journey of Coding, Learning and Creating Beautiful
 					Products.
 				</p>
 			</article>
