@@ -3,6 +3,7 @@
 
 	export let leading = 'A brief description of the project.';
 	export let projectName = 'Project Name';
+	export let techStack = 'FIGMA | HTML | CSS | JS | NODE';
 	export let viewCodeUrl = '';
 	export let liveViewUrl = '';
 	export let images = [
@@ -25,9 +26,10 @@
 		<div class="text-center space-y-4 flex flex-col md:flex-row justify-between px-8">
 			<div>
 				<h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">{leading}</h1>
-				<p class="text-lg md:text-xl">{projectName}</p>
+				<p class="text-lg md:text-xl name">{projectName}</p>
+				<p class="tech text-xs text-blue-500">{techStack}</p>
 			</div>
-			<div class="flex items-center justify-center gap-4 bg-orange-300/10 p-2 rounded-lg">
+			<div class="flex items-center justify-center gap-4 bg-orange-300/10 p-2 rounded-lg h-16">
 				<a
 					href={viewCodeUrl}
 					class="inline-flex h-9 items-center justify-center px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors rounded-md"

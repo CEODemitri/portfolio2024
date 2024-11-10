@@ -27,8 +27,13 @@
 
 	onMount(() => {
 		try {
-			gsap.from('.name', { scale: 0.5, duration: 2 });
+			gsap.from('.name', { scrollTrigger: '.name', scale: 0.5, opacity: 0, x: 100, duration: 2 });
 			gsap.to('.name', { color: 'white', duration: 5 });
+
+			let tween = gsap.to('.name', {
+				x: 300,
+				scrollTrigger: '.name'
+			});
 		} catch (error) {
 			console.error('Error in GSAP animation:', error);
 		}
@@ -54,9 +59,10 @@
 	const shoeShow = {
 		leading: 'Portfolio & Blog',
 		projectName: 'Shoe Show',
+		techStack: 'FIGMA | SVELTEKIT | GSAP',
 		viewCodeUrl: 'https://github.com/CEODemitri/Shoe-Show-V3',
 		liveViewUrl: 'https://shoe-show-v3.vercel.app/',
-		images: ['/projects/shoe1.png'],
+		images: ['/projects/shoe1.png', '/projects/shoe2.png', '/projects/shoe3.png'],
 		descriptionTitle: 'Full Stack Application',
 		description:
 			'Combination of Appwrite and NextJS to create a powerful App for an Up and Coming Brand Name Shoe Enthusiast.'
@@ -186,7 +192,7 @@
 							<p
 								class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 							>
-								Check out some of my recent web applications.
+								Check out some of my recent projects.
 							</p>
 						</div>
 					</div>
