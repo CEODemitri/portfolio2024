@@ -35,7 +35,7 @@
 					<li>
 						<a
 							class="hover:underline underline-offset-4 hover:text-white hover:scale-125"
-							href="#projects">Work</a
+							href="#projects">Projects</a
 						>
 					</li>
 					<li>
@@ -80,9 +80,9 @@
 					/>
 				</svg> -->
 				<button
-					class="ml-auto justify-self-center hidden lg:block px-6 text-lg uppercase bg-gradient-to-br from-slate-700 to-purple-800/50 rounded-md text-slate-300 mr-8"
+					class="ml-auto justify-self-center hidden lg:block px-6 p-2 text-md uppercase bg-gradient-to-br from-slate-700 to-purple-800/50 rounded-md text-slate-300 mr-8"
 				>
-					Resume</button
+					Request</button
 				>
 			</div>
 		</div>
@@ -96,12 +96,12 @@
 		>
 			<!-- Sidebar content here -->
 			<li>
-				<a class="text-sm font-medium hover:underline underline-offset-4" href="/">About</a>
-			</li>
-			<li>
 				<a class="text-sm font-medium hover:underline underline-offset-4" href="#projects"
 					>Projects</a
 				>
+			</li>
+			<li>
+				<a class="text-sm font-medium hover:underline underline-offset-4" href="/">About</a>
 			</li>
 			<li>
 				<a class="text-sm font-medium hover:underline underline-offset-4" href="#ux-portfolio"

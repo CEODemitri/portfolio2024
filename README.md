@@ -7,3 +7,9 @@ Using Ai and UI library Daisy UI to jumpstart the process. Filling in the detail
 - [ ] Design Sheet
 - [ ] Icon Library with Iconify
 - [ ] Figma Project Image Template for export
+
+### Knock Out
+
+- [ ] Navbar update. subnavigation for more space theme
+- [ ] Connect Navbar
+- [ ] more promiment logo
