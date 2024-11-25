@@ -111,7 +111,7 @@
 			<!-- <div class="relative bg-[url('./bg/lgCloud.png')] bg-cover"></div> -->
 			<p class="absolute text-xs text-slate-400/80">Web Portfolio: Demitri Echols</p>
 			<article
-				class="hidden md:block col-start-2 col-span-3 row-start-5 row-span-3 bg-gray-200/5 rounded-lg"
+				class="hidden md:flex col-start-2 col-span-3 row-start-5 row-span-4 bg-gray-200/5 rounded-lg flex-col justify-center"
 			>
 				{#each jobs as job}
 					<ul>
@@ -174,7 +174,7 @@
 					<Dribbble />
 				</section>
 			</article>
-			<p class="absolute top-[1060px] md:top-[80vh] md:left-[90vw] text-slate-200 text-xs">
+			<p class="absolute top-[1060px] md:top-[90vh] md:left-[90vw] text-slate-200 text-xs">
 				updated 24.9.18
 			</p>
 		</div>
