@@ -48,20 +48,20 @@
 					<li>
 						<a
 							class="hover:underline underline-offset-4 hover:text-white hover:scale-125"
-							href="#contact">Behance</a
+							href="https://www.behance.net/demitriceo">Behance</a
 						>
 					</li>
 					<li>
 						<a
 							class="hover:underline underline-offset-4 hover:text-white hover:scale-125"
-							href="#contact">Github</a
+							href="https://github.com/CEODemitri">Github</a
 						>
 					</li>
 
 					<li>
 						<a
 							class="hover:underline underline-offset-4 hover:text-white hover:scale-125"
-							href="#contact">Codepen</a
+							href="https://codepen.io/your-work">Codepen</a
 						>
 					</li>
 				</ul>
