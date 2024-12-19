@@ -98,20 +98,14 @@
 	];
 </script>
 
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/opiuijVeWTy
--->
-
 <div class="flex flex-col min-h-[100dvh]">
 	<main class="font-['Josefin_Sans_Variable'] text-white">
 		<!-- hero section -->
 		<div class="flex flex-col md:h-[80vh] md:grid grid-cols-12 grid-rows-12 gap-8 p-4 bg-center">
-			<!-- cloud -->
 			<!-- <div class="relative bg-[url('./bg/lgCloud.png')] bg-cover"></div> -->
 			<p class="absolute text-xs text-slate-400/80">Web Portfolio: Demitri Echols</p>
 			<article
-				class="hidden md:flex col-start-2 col-span-3 row-start-5 row-span-4 bg-gray-200/5 rounded-lg flex-col justify-center"
+				class="hidden md:flex col-start-2 col-span-3 row-start-5 row-span-4 bg-gray-200/5 rounded-lg flex-col justify-center shadow-md shadow-pink-500/20"
 			>
 				{#each jobs as job}
 					<ul>
@@ -128,17 +122,9 @@
 			<article
 				class="mt-48 md:mt-0 col-start-8 col-span-5 row-start-4 row-span-6 bg-black/30 p-4 flex flex-col gap-6 md:flex-col-reverse justify-between items-end md:items-center rounded-xl backdrop-blur-sm"
 			>
-				<!-- <div class="flex w-[200px] h-[200px] justify-center items-center relative">
-					<div
-						class="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-xl absolute"
-					></div>
-					<div
-						class="w-[108%] h-[108%] shadow-lg shadow-violet-500 bg-transparent rounded-full absolute rotate-90"
-					></div>
-					<div
-						class="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute rotate-180"
-					></div>
-				</div> -->
+				<div class="flex w-[200px] h-[200px] justify-center items-center relative">
+					<div class="w-[110%] h-[110%] bg-transparent rounded-xl absolute"></div>
+				</div>
 
 				<h1 class="text-7xl font-extralight text-right tracking-wider">
 					Creative Designer & <span class="font-bold">Developer</span>
@@ -169,13 +155,13 @@
 
 			<article class="col-start-9 col-span-3 bg-black/30 row-start-11 row-span-1 rounded-md">
 				<section class="flex flex-col md:flex-row justify-around items-center text-4xl gap-6">
-					<Github />
+					<a href="https://github.com/CEODemitri"><Github /></a>
 					<Blitz />
 					<Dribbble />
 				</section>
 			</article>
 			<p class="absolute top-[1060px] md:top-[90vh] md:left-[90vw] text-slate-200 text-xs">
-				updated 24.9.18
+				updated 24.12.18
 			</p>
 		</div>
 

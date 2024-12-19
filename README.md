@@ -9,11 +9,3 @@ Using Ai and UI library Daisy UI to jumpstart the process. Filling in the detail
 - [ ] Figma Project Image Template for export
 
 ---
-
-### Knock Out
-
-due 11/27
-
-- [ ] Navbar update. subnavigation for more space theme
-- [ ] Connect Navbar
-- [ ] more promiment logo

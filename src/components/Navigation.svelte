@@ -21,9 +21,9 @@
 					</svg>
 				</label>
 			</div>
-			<div class="mx-2 px-2 w-1/5">
-				<a class="flex items-center justify-center" href="/">
-					Demitri Echols
+			<div class="mx-2 w-1/5">
+				<a class="flex" href="/">
+					iprogramidesign
 					<span class="sr-only">Demitri Echols' Portfolio</span>
 				</a>
 			</div>
@@ -88,13 +88,13 @@
 		</div>
 	</div>
 
-	<!-- sidebar content -->
+	<!-- hamburger content -->
 	<div class="drawer-side z-50">
 		<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
 		<ul
 			class="menu bg-black/60 min-h-full w-80 p-4 backdrop-blur-sm flex gap-8 text-slate-400 uppercase"
 		>
-			<!-- Sidebar content here -->
+			<!-- hamburger content here -->
 			<li>
 				<a class="text-sm font-medium hover:underline underline-offset-4" href="#projects"
 					>Projects</a
